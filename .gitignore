@@ -3,3 +3,4 @@ assets/
 __pycache__/
 *.pyc
 *.pyo
+token.txt

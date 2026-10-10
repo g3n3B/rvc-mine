@@ -6,7 +6,7 @@ set "REPO_NAME=RVC-mine"
 set "SCRIPT_DIR=%~dp0"
 set "RVC_ROOT=%SCRIPT_DIR%%REPO_NAME%"
 set "VENV_DIR=%RVC_ROOT%\venv"
-set "GIT_REMOTE=https://g3n3B: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@github.com/g3n3B/rvc-mine.git"
+set "TOKEN_FILE=%SCRIPT_DIR%token.txt"
 
 cls
 echo.
@@ -25,6 +25,18 @@ echo    ^|                                               ^|
 echo    +===============================================+
 echo.
 timeout /t 2 /nobreak >nul
+
+:: ============================================================
+::  READ TOKEN
+:: ============================================================
+if not exist "%TOKEN_FILE%" (
+    echo    [ERROR] token.txt not found at %SCRIPT_DIR%
+    echo    Create a file called token.txt next to this script
+    echo    containing only your GitHub personal access token.
+    pause & exit /b 1
+)
+set /p GH_TOKEN=<"%TOKEN_FILE%"
+set "GIT_REMOTE=https://g3n3B:!GH_TOKEN!@github.com/g3n3B/rvc-mine.git"
 
 :: ============================================================
 ::  SAFETY CHECK
@@ -52,18 +64,13 @@ echo    [ 1 / 3 ]  Committing results...
 echo    -----------------------------------------------
 cd /d "%RVC_ROOT%"
 
-:: Set remote with PAT
 git remote set-url origin "%GIT_REMOTE%"
-
-:: Stage everything
 git add -A
 
-:: Check if there's anything to commit
 git diff --cached --quiet
 if !ERRORLEVEL! == 0 (
     echo    ^> No changes to commit — already up to date.
 ) else (
-    :: Auto-generate commit message with timestamp
     for /f "tokens=1-3 delims=/ " %%A in ('date /t') do set "DATESTR=%%A-%%B-%%C"
     for /f "tokens=1-2 delims=: " %%A in ('time /t') do set "TIMESTR=%%A%%B"
     git commit -m "training results — !DATESTR! !TIMESTR!"
@@ -93,7 +100,6 @@ echo    [ 3 / 3 ]  Cleaning up...
 echo    -----------------------------------------------
 cd /d "%SCRIPT_DIR%"
 
-:: Deactivate venv if active
 call "%VENV_DIR%\Scripts\deactivate.bat" >nul 2>&1
 
 echo    ^> Removing RVC-mine...
