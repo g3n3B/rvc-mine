@@ -1,0 +1,8 @@
+[Index training] Feature shape: (17834, 768) | IVF count: 457
+[Index training] Training index
+[Index training] Adding feature vectors
+[Index training] Write progress: 1/3
+[Index training] Write progress: 2/3
+[Index training] Write progress: 3/3
+[Index training] Index built successfully: added_IVF457_Flat_nprobe_1_sexy-voice_v2.index
+[Index training] External index link already exists: /home/g3n3bu/rvc/logs/sexy-voice/added_IVF457_Flat_nprobe_1_sexy-voice_v2.index

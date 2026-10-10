@@ -1,0 +1,3320 @@
+[HuBERT features] Loading model: /home/g3n3bu/rvc/assets/hubert_base
+[HuBERT features] Loading model: /home/g3n3bu/rvc/assets/hubert_base
+[HuBERT features] Device: cpu | Pending: 121 | Skipped: 0
+[HuBERT features] Progress: 1/121 | Success: 1 | Failed: 0 | 0_1.wav | (149, 768)
+[HuBERT features] Progress: 11/121 | Success: 11 | Failed: 0 | 0_216.wav | (149, 768)
+[HuBERT features] Progress: 22/121 | Success: 22 | Failed: 0 | 0_277.wav | (149, 768)
+[HuBERT features] Progress: 33/121 | Success: 33 | Failed: 0 | 0_325.wav | (149, 768)
+[HuBERT features] Progress: 44/121 | Success: 44 | Failed: 0 | 0_374.wav | (149, 768)
+[HuBERT features] Progress: 55/121 | Success: 55 | Failed: 0 | 0_410.wav | (149, 768)
+[HuBERT features] Progress: 66/121 | Success: 66 | Failed: 0 | 1_106.wav | (149, 768)
+[HuBERT features] Progress: 77/121 | Success: 77 | Failed: 0 | 1_259.wav | (149, 768)
+[HuBERT features] Progress: 88/121 | Success: 88 | Failed: 0 | 1_396.wav | (149, 768)
+[HuBERT features] Progress: 99/121 | Success: 99 | Failed: 0 | 1_427.wav | (149, 768)
+[HuBERT features] Progress: 110/121 | Success: 110 | Failed: 0 | 1_485.wav | (149, 768)
+[HuBERT features] Progress: 121/121 | Success: 121 | Failed: 0 | 1_85.wav | (149, 768)
+[HuBERT features] Completed | Success: 121 | Skipped: 0 | Failed: 0
+[F0 extraction] Pending: 31
+[F0 extraction] Pending: 30
+[F0 extraction] Pending: 30
+[F0 extraction] Pending: 30
+Loading RMVPE model
+Loading RMVPE model
+Loading RMVPE model
+Loading RMVPE model
+[F0 extraction][Failed] logs/sexy-voice/1_16k_wavs/0_110.wav
+Traceback (most recent call last):
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 141, in go
+    featur_pit = self.compute_f0(inp_path, f0_method)
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 96, in compute_f0
+    self.model_rmvpe = RMVPE(
+                       ~~~~~^
+        "assets/rmvpe/rmvpe.pt", is_half=is_half, device=device
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 535, in __init__
+    self.model = get_default_model()
+                 ~~~~~~~~~~~~~~~~~^^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 526, in get_default_model
+    ckpt = torch.load(model_path, map_location="cpu")
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 1565, in load
+    with _open_file_like(f, "rb") as opened_file:
+         ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 795, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 776, in __init__
+    super().__init__(open(name, mode))  # noqa: SIM115
+                     ~~~~^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'assets/rmvpe/rmvpe.pt'
+
+[F0 extraction][Failed] logs/sexy-voice/1_16k_wavs/0_1.wav
+Traceback (most recent call last):
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 141, in go
+    featur_pit = self.compute_f0(inp_path, f0_method)
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 96, in compute_f0
+    self.model_rmvpe = RMVPE(
+                       ~~~~~^
+        "assets/rmvpe/rmvpe.pt", is_half=is_half, device=device
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 535, in __init__
+    self.model = get_default_model()
+                 ~~~~~~~~~~~~~~~~~^^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 526, in get_default_model
+    ckpt = torch.load(model_path, map_location="cpu")
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 1565, in load
+    with _open_file_like(f, "rb") as opened_file:
+         ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 795, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 776, in __init__
+    super().__init__(open(name, mode))  # noqa: SIM115
+                     ~~~~^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'assets/rmvpe/rmvpe.pt'
+
+[F0 extraction][Failed] logs/sexy-voice/1_16k_wavs/0_13.wav
+Traceback (most recent call last):
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 141, in go
+    featur_pit = self.compute_f0(inp_path, f0_method)
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 96, in compute_f0
+    self.model_rmvpe = RMVPE(
+                       ~~~~~^
+        "assets/rmvpe/rmvpe.pt", is_half=is_half, device=device
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 535, in __init__
+    self.model = get_default_model()
+                 ~~~~~~~~~~~~~~~~~^^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 526, in get_default_model
+    ckpt = torch.load(model_path, map_location="cpu")
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 1565, in load
+    with _open_file_like(f, "rb") as opened_file:
+         ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 795, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 776, in __init__
+    super().__init__(open(name, mode))  # noqa: SIM115
+                     ~~~~^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'assets/rmvpe/rmvpe.pt'
+
+[F0 extraction][Failed] logs/sexy-voice/1_16k_wavs/0_106.wav
+Traceback (most recent call last):
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 141, in go
+    featur_pit = self.compute_f0(inp_path, f0_method)
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 96, in compute_f0
+    self.model_rmvpe = RMVPE(
+                       ~~~~~^
+        "assets/rmvpe/rmvpe.pt", is_half=is_half, device=device
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 535, in __init__
+    self.model = get_default_model()
+                 ~~~~~~~~~~~~~~~~~^^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 526, in get_default_model
+    ckpt = torch.load(model_path, map_location="cpu")
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 1565, in load
+    with _open_file_like(f, "rb") as opened_file:
+         ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 795, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 776, in __init__
+    super().__init__(open(name, mode))  # noqa: SIM115
+                     ~~~~^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'assets/rmvpe/rmvpe.pt'
+
+Loading RMVPE model
+Loading RMVPE model
+Loading RMVPE model
+Loading RMVPE model
+[F0 extraction][Failed] logs/sexy-voice/1_16k_wavs/0_166.wav
+Traceback (most recent call last):
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 141, in go
+    featur_pit = self.compute_f0(inp_path, f0_method)
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 96, in compute_f0
+    self.model_rmvpe = RMVPE(
+                       ~~~~~^
+        "assets/rmvpe/rmvpe.pt", is_half=is_half, device=device
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 535, in __init__
+    self.model = get_default_model()
+                 ~~~~~~~~~~~~~~~~~^^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 526, in get_default_model
+    ckpt = torch.load(model_path, map_location="cpu")
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 1565, in load
+    with _open_file_like(f, "rb") as opened_file:
+         ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 795, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 776, in __init__
+    super().__init__(open(name, mode))  # noqa: SIM115
+                     ~~~~^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'assets/rmvpe/rmvpe.pt'
+
+[F0 extraction][Failed] logs/sexy-voice/1_16k_wavs/0_133.wav
+Traceback (most recent call last):
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 141, in go
+    featur_pit = self.compute_f0(inp_path, f0_method)
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 96, in compute_f0
+    self.model_rmvpe = RMVPE(
+                       ~~~~~^
+        "assets/rmvpe/rmvpe.pt", is_half=is_half, device=device
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 535, in __init__
+    self.model = get_default_model()
+                 ~~~~~~~~~~~~~~~~~^^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 526, in get_default_model
+    ckpt = torch.load(model_path, map_location="cpu")
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 1565, in load
+    with _open_file_like(f, "rb") as opened_file:
+         ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 795, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 776, in __init__
+    super().__init__(open(name, mode))  # noqa: SIM115
+                     ~~~~^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'assets/rmvpe/rmvpe.pt'
+
+[F0 extraction][Failed] logs/sexy-voice/1_16k_wavs/0_176.wav
+Traceback (most recent call last):
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 141, in go
+    featur_pit = self.compute_f0(inp_path, f0_method)
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 96, in compute_f0
+    self.model_rmvpe = RMVPE(
+                       ~~~~~^
+        "assets/rmvpe/rmvpe.pt", is_half=is_half, device=device
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 535, in __init__
+    self.model = get_default_model()
+                 ~~~~~~~~~~~~~~~~~^^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 526, in get_default_model
+    ckpt = torch.load(model_path, map_location="cpu")
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 1565, in load
+    with _open_file_like(f, "rb") as opened_file:
+         ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 795, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 776, in __init__
+    super().__init__(open(name, mode))  # noqa: SIM115
+                     ~~~~^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'assets/rmvpe/rmvpe.pt'
+
+[F0 extraction][Failed] logs/sexy-voice/1_16k_wavs/0_140.wav
+Traceback (most recent call last):
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 141, in go
+    featur_pit = self.compute_f0(inp_path, f0_method)
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 96, in compute_f0
+    self.model_rmvpe = RMVPE(
+                       ~~~~~^
+        "assets/rmvpe/rmvpe.pt", is_half=is_half, device=device
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 535, in __init__
+    self.model = get_default_model()
+                 ~~~~~~~~~~~~~~~~~^^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 526, in get_default_model
+    ckpt = torch.load(model_path, map_location="cpu")
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 1565, in load
+    with _open_file_like(f, "rb") as opened_file:
+         ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 795, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 776, in __init__
+    super().__init__(open(name, mode))  # noqa: SIM115
+                     ~~~~^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'assets/rmvpe/rmvpe.pt'
+
+Loading RMVPE model
+Loading RMVPE model
+Loading RMVPE model
+Loading RMVPE model
+[F0 extraction][Failed] logs/sexy-voice/1_16k_wavs/0_18.wav
+Traceback (most recent call last):
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 141, in go
+    featur_pit = self.compute_f0(inp_path, f0_method)
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 96, in compute_f0
+    self.model_rmvpe = RMVPE(
+                       ~~~~~^
+        "assets/rmvpe/rmvpe.pt", is_half=is_half, device=device
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 535, in __init__
+    self.model = get_default_model()
+                 ~~~~~~~~~~~~~~~~~^^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 526, in get_default_model
+    ckpt = torch.load(model_path, map_location="cpu")
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 1565, in load
+    with _open_file_like(f, "rb") as opened_file:
+         ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 795, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 776, in __init__
+    super().__init__(open(name, mode))  # noqa: SIM115
+                     ~~~~^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'assets/rmvpe/rmvpe.pt'
+
+[F0 extraction][Failed] logs/sexy-voice/1_16k_wavs/0_216.wav
+Traceback (most recent call last):
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 141, in go
+    featur_pit = self.compute_f0(inp_path, f0_method)
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 96, in compute_f0
+    self.model_rmvpe = RMVPE(
+                       ~~~~~^
+        "assets/rmvpe/rmvpe.pt", is_half=is_half, device=device
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 535, in __init__
+    self.model = get_default_model()
+                 ~~~~~~~~~~~~~~~~~^^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 526, in get_default_model
+    ckpt = torch.load(model_path, map_location="cpu")
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 1565, in load
+    with _open_file_like(f, "rb") as opened_file:
+         ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 795, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 776, in __init__
+    super().__init__(open(name, mode))  # noqa: SIM115
+                     ~~~~^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'assets/rmvpe/rmvpe.pt'
+
+[F0 extraction][Failed] logs/sexy-voice/1_16k_wavs/0_219.wav
+Traceback (most recent call last):
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 141, in go
+    featur_pit = self.compute_f0(inp_path, f0_method)
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 96, in compute_f0
+    self.model_rmvpe = RMVPE(
+                       ~~~~~^
+        "assets/rmvpe/rmvpe.pt", is_half=is_half, device=device
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 535, in __init__
+    self.model = get_default_model()
+                 ~~~~~~~~~~~~~~~~~^^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 526, in get_default_model
+    ckpt = torch.load(model_path, map_location="cpu")
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 1565, in load
+    with _open_file_like(f, "rb") as opened_file:
+         ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 795, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 776, in __init__
+    super().__init__(open(name, mode))  # noqa: SIM115
+                     ~~~~^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'assets/rmvpe/rmvpe.pt'
+
+[F0 extraction][Failed] logs/sexy-voice/1_16k_wavs/0_20.wav
+Traceback (most recent call last):
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 141, in go
+    featur_pit = self.compute_f0(inp_path, f0_method)
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 96, in compute_f0
+    self.model_rmvpe = RMVPE(
+                       ~~~~~^
+        "assets/rmvpe/rmvpe.pt", is_half=is_half, device=device
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 535, in __init__
+    self.model = get_default_model()
+                 ~~~~~~~~~~~~~~~~~^^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 526, in get_default_model
+    ckpt = torch.load(model_path, map_location="cpu")
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 1565, in load
+    with _open_file_like(f, "rb") as opened_file:
+         ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 795, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 776, in __init__
+    super().__init__(open(name, mode))  # noqa: SIM115
+                     ~~~~^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'assets/rmvpe/rmvpe.pt'
+
+Loading RMVPE model
+Loading RMVPE model
+Loading RMVPE model
+Loading RMVPE model
+[F0 extraction][Failed] logs/sexy-voice/1_16k_wavs/0_220.wav
+Traceback (most recent call last):
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 141, in go
+    featur_pit = self.compute_f0(inp_path, f0_method)
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 96, in compute_f0
+    self.model_rmvpe = RMVPE(
+                       ~~~~~^
+        "assets/rmvpe/rmvpe.pt", is_half=is_half, device=device
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 535, in __init__
+    self.model = get_default_model()
+                 ~~~~~~~~~~~~~~~~~^^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 526, in get_default_model
+    ckpt = torch.load(model_path, map_location="cpu")
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 1565, in load
+    with _open_file_like(f, "rb") as opened_file:
+         ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 795, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 776, in __init__
+    super().__init__(open(name, mode))  # noqa: SIM115
+                     ~~~~^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'assets/rmvpe/rmvpe.pt'
+
+[F0 extraction][Failed] logs/sexy-voice/1_16k_wavs/0_26.wav
+Traceback (most recent call last):
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 141, in go
+    featur_pit = self.compute_f0(inp_path, f0_method)
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 96, in compute_f0
+    self.model_rmvpe = RMVPE(
+                       ~~~~~^
+        "assets/rmvpe/rmvpe.pt", is_half=is_half, device=device
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 535, in __init__
+    self.model = get_default_model()
+                 ~~~~~~~~~~~~~~~~~^^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 526, in get_default_model
+    ckpt = torch.load(model_path, map_location="cpu")
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 1565, in load
+    with _open_file_like(f, "rb") as opened_file:
+         ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 795, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 776, in __init__
+    super().__init__(open(name, mode))  # noqa: SIM115
+                     ~~~~^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'assets/rmvpe/rmvpe.pt'
+
+[F0 extraction][Failed] logs/sexy-voice/1_16k_wavs/0_243.wav
+Traceback (most recent call last):
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 141, in go
+    featur_pit = self.compute_f0(inp_path, f0_method)
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 96, in compute_f0
+    self.model_rmvpe = RMVPE(
+                       ~~~~~^
+        "assets/rmvpe/rmvpe.pt", is_half=is_half, device=device
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 535, in __init__
+    self.model = get_default_model()
+                 ~~~~~~~~~~~~~~~~~^^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 526, in get_default_model
+    ckpt = torch.load(model_path, map_location="cpu")
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 1565, in load
+    with _open_file_like(f, "rb") as opened_file:
+         ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 795, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 776, in __init__
+    super().__init__(open(name, mode))  # noqa: SIM115
+                     ~~~~^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'assets/rmvpe/rmvpe.pt'
+
+[F0 extraction][Failed] logs/sexy-voice/1_16k_wavs/0_236.wav
+Traceback (most recent call last):
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 141, in go
+    featur_pit = self.compute_f0(inp_path, f0_method)
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 96, in compute_f0
+    self.model_rmvpe = RMVPE(
+                       ~~~~~^
+        "assets/rmvpe/rmvpe.pt", is_half=is_half, device=device
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 535, in __init__
+    self.model = get_default_model()
+                 ~~~~~~~~~~~~~~~~~^^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 526, in get_default_model
+    ckpt = torch.load(model_path, map_location="cpu")
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 1565, in load
+    with _open_file_like(f, "rb") as opened_file:
+         ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 795, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 776, in __init__
+    super().__init__(open(name, mode))  # noqa: SIM115
+                     ~~~~^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'assets/rmvpe/rmvpe.pt'
+
+Loading RMVPE model
+Loading RMVPE model
+Loading RMVPE model
+Loading RMVPE model
+[F0 extraction][Failed] logs/sexy-voice/1_16k_wavs/0_266.wav
+Traceback (most recent call last):
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 141, in go
+    featur_pit = self.compute_f0(inp_path, f0_method)
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 96, in compute_f0
+    self.model_rmvpe = RMVPE(
+                       ~~~~~^
+        "assets/rmvpe/rmvpe.pt", is_half=is_half, device=device
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 535, in __init__
+    self.model = get_default_model()
+                 ~~~~~~~~~~~~~~~~~^^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 526, in get_default_model
+    ckpt = torch.load(model_path, map_location="cpu")
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 1565, in load
+    with _open_file_like(f, "rb") as opened_file:
+         ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 795, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 776, in __init__
+    super().__init__(open(name, mode))  # noqa: SIM115
+                     ~~~~^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'assets/rmvpe/rmvpe.pt'
+
+[F0 extraction][Failed] logs/sexy-voice/1_16k_wavs/0_274.wav
+Traceback (most recent call last):
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 141, in go
+    featur_pit = self.compute_f0(inp_path, f0_method)
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 96, in compute_f0
+    self.model_rmvpe = RMVPE(
+                       ~~~~~^
+        "assets/rmvpe/rmvpe.pt", is_half=is_half, device=device
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 535, in __init__
+    self.model = get_default_model()
+                 ~~~~~~~~~~~~~~~~~^^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 526, in get_default_model
+    ckpt = torch.load(model_path, map_location="cpu")
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 1565, in load
+    with _open_file_like(f, "rb") as opened_file:
+         ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 795, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 776, in __init__
+    super().__init__(open(name, mode))  # noqa: SIM115
+                     ~~~~^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'assets/rmvpe/rmvpe.pt'
+
+[F0 extraction][Failed] logs/sexy-voice/1_16k_wavs/0_272.wav
+Traceback (most recent call last):
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 141, in go
+    featur_pit = self.compute_f0(inp_path, f0_method)
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 96, in compute_f0
+    self.model_rmvpe = RMVPE(
+                       ~~~~~^
+        "assets/rmvpe/rmvpe.pt", is_half=is_half, device=device
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 535, in __init__
+    self.model = get_default_model()
+                 ~~~~~~~~~~~~~~~~~^^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 526, in get_default_model
+    ckpt = torch.load(model_path, map_location="cpu")
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 1565, in load
+    with _open_file_like(f, "rb") as opened_file:
+         ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 795, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 776, in __init__
+    super().__init__(open(name, mode))  # noqa: SIM115
+                     ~~~~^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'assets/rmvpe/rmvpe.pt'
+
+[F0 extraction][Failed] logs/sexy-voice/1_16k_wavs/0_268.wav
+Traceback (most recent call last):
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 141, in go
+    featur_pit = self.compute_f0(inp_path, f0_method)
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 96, in compute_f0
+    self.model_rmvpe = RMVPE(
+                       ~~~~~^
+        "assets/rmvpe/rmvpe.pt", is_half=is_half, device=device
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 535, in __init__
+    self.model = get_default_model()
+                 ~~~~~~~~~~~~~~~~~^^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 526, in get_default_model
+    ckpt = torch.load(model_path, map_location="cpu")
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 1565, in load
+    with _open_file_like(f, "rb") as opened_file:
+         ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 795, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 776, in __init__
+    super().__init__(open(name, mode))  # noqa: SIM115
+                     ~~~~^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'assets/rmvpe/rmvpe.pt'
+
+Loading RMVPE model
+Loading RMVPE model
+Loading RMVPE model
+Loading RMVPE model
+[F0 extraction][Failed] logs/sexy-voice/1_16k_wavs/0_275.wav
+Traceback (most recent call last):
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 141, in go
+    featur_pit = self.compute_f0(inp_path, f0_method)
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 96, in compute_f0
+    self.model_rmvpe = RMVPE(
+                       ~~~~~^
+        "assets/rmvpe/rmvpe.pt", is_half=is_half, device=device
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 535, in __init__
+    self.model = get_default_model()
+                 ~~~~~~~~~~~~~~~~~^^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 526, in get_default_model
+    ckpt = torch.load(model_path, map_location="cpu")
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 1565, in load
+    with _open_file_like(f, "rb") as opened_file:
+         ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 795, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 776, in __init__
+    super().__init__(open(name, mode))  # noqa: SIM115
+                     ~~~~^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'assets/rmvpe/rmvpe.pt'
+
+[F0 extraction][Failed] logs/sexy-voice/1_16k_wavs/0_28.wav
+Traceback (most recent call last):
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 141, in go
+    featur_pit = self.compute_f0(inp_path, f0_method)
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 96, in compute_f0
+    self.model_rmvpe = RMVPE(
+                       ~~~~~^
+        "assets/rmvpe/rmvpe.pt", is_half=is_half, device=device
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 535, in __init__
+    self.model = get_default_model()
+                 ~~~~~~~~~~~~~~~~~^^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 526, in get_default_model
+    ckpt = torch.load(model_path, map_location="cpu")
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 1565, in load
+    with _open_file_like(f, "rb") as opened_file:
+         ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 795, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 776, in __init__
+    super().__init__(open(name, mode))  # noqa: SIM115
+                     ~~~~^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'assets/rmvpe/rmvpe.pt'
+
+[F0 extraction][Failed] logs/sexy-voice/1_16k_wavs/0_283.wav
+Traceback (most recent call last):
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 141, in go
+    featur_pit = self.compute_f0(inp_path, f0_method)
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 96, in compute_f0
+    self.model_rmvpe = RMVPE(
+                       ~~~~~^
+        "assets/rmvpe/rmvpe.pt", is_half=is_half, device=device
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 535, in __init__
+    self.model = get_default_model()
+                 ~~~~~~~~~~~~~~~~~^^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 526, in get_default_model
+    ckpt = torch.load(model_path, map_location="cpu")
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 1565, in load
+    with _open_file_like(f, "rb") as opened_file:
+         ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 795, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 776, in __init__
+    super().__init__(open(name, mode))  # noqa: SIM115
+                     ~~~~^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'assets/rmvpe/rmvpe.pt'
+
+[F0 extraction][Failed] logs/sexy-voice/1_16k_wavs/0_277.wav
+Traceback (most recent call last):
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 141, in go
+    featur_pit = self.compute_f0(inp_path, f0_method)
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 96, in compute_f0
+    self.model_rmvpe = RMVPE(
+                       ~~~~~^
+        "assets/rmvpe/rmvpe.pt", is_half=is_half, device=device
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 535, in __init__
+    self.model = get_default_model()
+                 ~~~~~~~~~~~~~~~~~^^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 526, in get_default_model
+    ckpt = torch.load(model_path, map_location="cpu")
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 1565, in load
+    with _open_file_like(f, "rb") as opened_file:
+         ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 795, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 776, in __init__
+    super().__init__(open(name, mode))  # noqa: SIM115
+                     ~~~~^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'assets/rmvpe/rmvpe.pt'
+
+Loading RMVPE model
+Loading RMVPE model
+Loading RMVPE model
+Loading RMVPE model
+[F0 extraction][Failed] logs/sexy-voice/1_16k_wavs/0_292.wav
+Traceback (most recent call last):
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 141, in go
+    featur_pit = self.compute_f0(inp_path, f0_method)
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 96, in compute_f0
+    self.model_rmvpe = RMVPE(
+                       ~~~~~^
+        "assets/rmvpe/rmvpe.pt", is_half=is_half, device=device
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 535, in __init__
+    self.model = get_default_model()
+                 ~~~~~~~~~~~~~~~~~^^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 526, in get_default_model
+    ckpt = torch.load(model_path, map_location="cpu")
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 1565, in load
+    with _open_file_like(f, "rb") as opened_file:
+         ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 795, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 776, in __init__
+    super().__init__(open(name, mode))  # noqa: SIM115
+                     ~~~~^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'assets/rmvpe/rmvpe.pt'
+
+[F0 extraction][Failed] logs/sexy-voice/1_16k_wavs/0_315.wav
+Traceback (most recent call last):
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 141, in go
+    featur_pit = self.compute_f0(inp_path, f0_method)
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 96, in compute_f0
+    self.model_rmvpe = RMVPE(
+                       ~~~~~^
+        "assets/rmvpe/rmvpe.pt", is_half=is_half, device=device
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 535, in __init__
+    self.model = get_default_model()
+                 ~~~~~~~~~~~~~~~~~^^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 526, in get_default_model
+    ckpt = torch.load(model_path, map_location="cpu")
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 1565, in load
+    with _open_file_like(f, "rb") as opened_file:
+         ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 795, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 776, in __init__
+    super().__init__(open(name, mode))  # noqa: SIM115
+                     ~~~~^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'assets/rmvpe/rmvpe.pt'
+
+[F0 extraction][Failed] logs/sexy-voice/1_16k_wavs/0_314.wav
+Traceback (most recent call last):
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 141, in go
+    featur_pit = self.compute_f0(inp_path, f0_method)
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 96, in compute_f0
+    self.model_rmvpe = RMVPE(
+                       ~~~~~^
+        "assets/rmvpe/rmvpe.pt", is_half=is_half, device=device
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 535, in __init__
+    self.model = get_default_model()
+                 ~~~~~~~~~~~~~~~~~^^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 526, in get_default_model
+    ckpt = torch.load(model_path, map_location="cpu")
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 1565, in load
+    with _open_file_like(f, "rb") as opened_file:
+         ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 795, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 776, in __init__
+    super().__init__(open(name, mode))  # noqa: SIM115
+                     ~~~~^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'assets/rmvpe/rmvpe.pt'
+
+[F0 extraction][Failed] logs/sexy-voice/1_16k_wavs/0_306.wav
+Traceback (most recent call last):
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 141, in go
+    featur_pit = self.compute_f0(inp_path, f0_method)
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 96, in compute_f0
+    self.model_rmvpe = RMVPE(
+                       ~~~~~^
+        "assets/rmvpe/rmvpe.pt", is_half=is_half, device=device
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 535, in __init__
+    self.model = get_default_model()
+                 ~~~~~~~~~~~~~~~~~^^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 526, in get_default_model
+    ckpt = torch.load(model_path, map_location="cpu")
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 1565, in load
+    with _open_file_like(f, "rb") as opened_file:
+         ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 795, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 776, in __init__
+    super().__init__(open(name, mode))  # noqa: SIM115
+                     ~~~~^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'assets/rmvpe/rmvpe.pt'
+
+Loading RMVPE model
+Loading RMVPE model
+Loading RMVPE model
+Loading RMVPE model
+[F0 extraction][Failed] logs/sexy-voice/1_16k_wavs/0_318.wav
+Traceback (most recent call last):
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 141, in go
+    featur_pit = self.compute_f0(inp_path, f0_method)
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 96, in compute_f0
+    self.model_rmvpe = RMVPE(
+                       ~~~~~^
+        "assets/rmvpe/rmvpe.pt", is_half=is_half, device=device
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 535, in __init__
+    self.model = get_default_model()
+                 ~~~~~~~~~~~~~~~~~^^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 526, in get_default_model
+    ckpt = torch.load(model_path, map_location="cpu")
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 1565, in load
+    with _open_file_like(f, "rb") as opened_file:
+         ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 795, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 776, in __init__
+    super().__init__(open(name, mode))  # noqa: SIM115
+                     ~~~~^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'assets/rmvpe/rmvpe.pt'
+
+[F0 extraction][Failed] logs/sexy-voice/1_16k_wavs/0_32.wav
+Traceback (most recent call last):
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 141, in go
+    featur_pit = self.compute_f0(inp_path, f0_method)
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 96, in compute_f0
+    self.model_rmvpe = RMVPE(
+                       ~~~~~^
+        "assets/rmvpe/rmvpe.pt", is_half=is_half, device=device
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 535, in __init__
+    self.model = get_default_model()
+                 ~~~~~~~~~~~~~~~~~^^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 526, in get_default_model
+    ckpt = torch.load(model_path, map_location="cpu")
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 1565, in load
+    with _open_file_like(f, "rb") as opened_file:
+         ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 795, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 776, in __init__
+    super().__init__(open(name, mode))  # noqa: SIM115
+                     ~~~~^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'assets/rmvpe/rmvpe.pt'
+
+[F0 extraction][Failed] logs/sexy-voice/1_16k_wavs/0_321.wav
+Traceback (most recent call last):
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 141, in go
+    featur_pit = self.compute_f0(inp_path, f0_method)
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 96, in compute_f0
+    self.model_rmvpe = RMVPE(
+                       ~~~~~^
+        "assets/rmvpe/rmvpe.pt", is_half=is_half, device=device
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 535, in __init__
+    self.model = get_default_model()
+                 ~~~~~~~~~~~~~~~~~^^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 526, in get_default_model
+    ckpt = torch.load(model_path, map_location="cpu")
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 1565, in load
+    with _open_file_like(f, "rb") as opened_file:
+         ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 795, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 776, in __init__
+    super().__init__(open(name, mode))  # noqa: SIM115
+                     ~~~~^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'assets/rmvpe/rmvpe.pt'
+
+[F0 extraction][Failed] logs/sexy-voice/1_16k_wavs/0_319.wav
+Traceback (most recent call last):
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 141, in go
+    featur_pit = self.compute_f0(inp_path, f0_method)
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 96, in compute_f0
+    self.model_rmvpe = RMVPE(
+                       ~~~~~^
+        "assets/rmvpe/rmvpe.pt", is_half=is_half, device=device
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 535, in __init__
+    self.model = get_default_model()
+                 ~~~~~~~~~~~~~~~~~^^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 526, in get_default_model
+    ckpt = torch.load(model_path, map_location="cpu")
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 1565, in load
+    with _open_file_like(f, "rb") as opened_file:
+         ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 795, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 776, in __init__
+    super().__init__(open(name, mode))  # noqa: SIM115
+                     ~~~~^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'assets/rmvpe/rmvpe.pt'
+
+Loading RMVPE model
+Loading RMVPE model
+Loading RMVPE model
+Loading RMVPE model
+[F0 extraction][Failed] logs/sexy-voice/1_16k_wavs/0_325.wav
+Traceback (most recent call last):
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 141, in go
+    featur_pit = self.compute_f0(inp_path, f0_method)
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 96, in compute_f0
+    self.model_rmvpe = RMVPE(
+                       ~~~~~^
+        "assets/rmvpe/rmvpe.pt", is_half=is_half, device=device
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 535, in __init__
+    self.model = get_default_model()
+                 ~~~~~~~~~~~~~~~~~^^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 526, in get_default_model
+    ckpt = torch.load(model_path, map_location="cpu")
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 1565, in load
+    with _open_file_like(f, "rb") as opened_file:
+         ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 795, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 776, in __init__
+    super().__init__(open(name, mode))  # noqa: SIM115
+                     ~~~~^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'assets/rmvpe/rmvpe.pt'
+
+[F0 extraction][Failed] logs/sexy-voice/1_16k_wavs/0_336.wav
+Traceback (most recent call last):
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 141, in go
+    featur_pit = self.compute_f0(inp_path, f0_method)
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 96, in compute_f0
+    self.model_rmvpe = RMVPE(
+                       ~~~~~^
+        "assets/rmvpe/rmvpe.pt", is_half=is_half, device=device
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 535, in __init__
+    self.model = get_default_model()
+                 ~~~~~~~~~~~~~~~~~^^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 526, in get_default_model
+    ckpt = torch.load(model_path, map_location="cpu")
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 1565, in load
+    with _open_file_like(f, "rb") as opened_file:
+         ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 795, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 776, in __init__
+    super().__init__(open(name, mode))  # noqa: SIM115
+                     ~~~~^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'assets/rmvpe/rmvpe.pt'
+
+[F0 extraction][Failed] logs/sexy-voice/1_16k_wavs/0_343.wav
+Traceback (most recent call last):
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 141, in go
+    featur_pit = self.compute_f0(inp_path, f0_method)
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 96, in compute_f0
+    self.model_rmvpe = RMVPE(
+                       ~~~~~^
+        "assets/rmvpe/rmvpe.pt", is_half=is_half, device=device
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 535, in __init__
+    self.model = get_default_model()
+                 ~~~~~~~~~~~~~~~~~^^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 526, in get_default_model
+    ckpt = torch.load(model_path, map_location="cpu")
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 1565, in load
+    with _open_file_like(f, "rb") as opened_file:
+         ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 795, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 776, in __init__
+    super().__init__(open(name, mode))  # noqa: SIM115
+                     ~~~~^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'assets/rmvpe/rmvpe.pt'
+
+[F0 extraction][Failed] logs/sexy-voice/1_16k_wavs/0_330.wav
+Traceback (most recent call last):
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 141, in go
+    featur_pit = self.compute_f0(inp_path, f0_method)
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 96, in compute_f0
+    self.model_rmvpe = RMVPE(
+                       ~~~~~^
+        "assets/rmvpe/rmvpe.pt", is_half=is_half, device=device
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 535, in __init__
+    self.model = get_default_model()
+                 ~~~~~~~~~~~~~~~~~^^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 526, in get_default_model
+    ckpt = torch.load(model_path, map_location="cpu")
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 1565, in load
+    with _open_file_like(f, "rb") as opened_file:
+         ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 795, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 776, in __init__
+    super().__init__(open(name, mode))  # noqa: SIM115
+                     ~~~~^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'assets/rmvpe/rmvpe.pt'
+
+Loading RMVPE model
+Loading RMVPE model
+Loading RMVPE model
+Loading RMVPE model
+[F0 extraction][Failed] logs/sexy-voice/1_16k_wavs/0_353.wav
+Traceback (most recent call last):
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 141, in go
+    featur_pit = self.compute_f0(inp_path, f0_method)
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 96, in compute_f0
+    self.model_rmvpe = RMVPE(
+                       ~~~~~^
+        "assets/rmvpe/rmvpe.pt", is_half=is_half, device=device
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 535, in __init__
+    self.model = get_default_model()
+                 ~~~~~~~~~~~~~~~~~^^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 526, in get_default_model
+    ckpt = torch.load(model_path, map_location="cpu")
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 1565, in load
+    with _open_file_like(f, "rb") as opened_file:
+         ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 795, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 776, in __init__
+    super().__init__(open(name, mode))  # noqa: SIM115
+                     ~~~~^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'assets/rmvpe/rmvpe.pt'
+
+[F0 extraction][Failed] logs/sexy-voice/1_16k_wavs/0_368.wav
+Traceback (most recent call last):
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 141, in go
+    featur_pit = self.compute_f0(inp_path, f0_method)
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 96, in compute_f0
+    self.model_rmvpe = RMVPE(
+                       ~~~~~^
+        "assets/rmvpe/rmvpe.pt", is_half=is_half, device=device
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 535, in __init__
+    self.model = get_default_model()
+                 ~~~~~~~~~~~~~~~~~^^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 526, in get_default_model
+    ckpt = torch.load(model_path, map_location="cpu")
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 1565, in load
+    with _open_file_like(f, "rb") as opened_file:
+         ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 795, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 776, in __init__
+    super().__init__(open(name, mode))  # noqa: SIM115
+                     ~~~~^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'assets/rmvpe/rmvpe.pt'
+
+[F0 extraction][Failed] logs/sexy-voice/1_16k_wavs/0_361.wav
+Traceback (most recent call last):
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 141, in go
+    featur_pit = self.compute_f0(inp_path, f0_method)
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 96, in compute_f0
+    self.model_rmvpe = RMVPE(
+                       ~~~~~^
+        "assets/rmvpe/rmvpe.pt", is_half=is_half, device=device
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 535, in __init__
+    self.model = get_default_model()
+                 ~~~~~~~~~~~~~~~~~^^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 526, in get_default_model
+    ckpt = torch.load(model_path, map_location="cpu")
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 1565, in load
+    with _open_file_like(f, "rb") as opened_file:
+         ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 795, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 776, in __init__
+    super().__init__(open(name, mode))  # noqa: SIM115
+                     ~~~~^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'assets/rmvpe/rmvpe.pt'
+
+[F0 extraction][Failed] logs/sexy-voice/1_16k_wavs/0_358.wav
+Traceback (most recent call last):
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 141, in go
+    featur_pit = self.compute_f0(inp_path, f0_method)
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 96, in compute_f0
+    self.model_rmvpe = RMVPE(
+                       ~~~~~^
+        "assets/rmvpe/rmvpe.pt", is_half=is_half, device=device
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 535, in __init__
+    self.model = get_default_model()
+                 ~~~~~~~~~~~~~~~~~^^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 526, in get_default_model
+    ckpt = torch.load(model_path, map_location="cpu")
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 1565, in load
+    with _open_file_like(f, "rb") as opened_file:
+         ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 795, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 776, in __init__
+    super().__init__(open(name, mode))  # noqa: SIM115
+                     ~~~~^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'assets/rmvpe/rmvpe.pt'
+
+Loading RMVPE model
+Loading RMVPE model
+Loading RMVPE model
+Loading RMVPE model
+[F0 extraction][Failed] logs/sexy-voice/1_16k_wavs/0_371.wav
+Traceback (most recent call last):
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 141, in go
+    featur_pit = self.compute_f0(inp_path, f0_method)
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 96, in compute_f0
+    self.model_rmvpe = RMVPE(
+                       ~~~~~^
+        "assets/rmvpe/rmvpe.pt", is_half=is_half, device=device
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 535, in __init__
+    self.model = get_default_model()
+                 ~~~~~~~~~~~~~~~~~^^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 526, in get_default_model
+    ckpt = torch.load(model_path, map_location="cpu")
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 1565, in load
+    with _open_file_like(f, "rb") as opened_file:
+         ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 795, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 776, in __init__
+    super().__init__(open(name, mode))  # noqa: SIM115
+                     ~~~~^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'assets/rmvpe/rmvpe.pt'
+
+[F0 extraction][Failed] logs/sexy-voice/1_16k_wavs/0_373.wav
+Traceback (most recent call last):
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 141, in go
+    featur_pit = self.compute_f0(inp_path, f0_method)
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 96, in compute_f0
+    self.model_rmvpe = RMVPE(
+                       ~~~~~^
+        "assets/rmvpe/rmvpe.pt", is_half=is_half, device=device
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 535, in __init__
+    self.model = get_default_model()
+                 ~~~~~~~~~~~~~~~~~^^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 526, in get_default_model
+    ckpt = torch.load(model_path, map_location="cpu")
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 1565, in load
+    with _open_file_like(f, "rb") as opened_file:
+         ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 795, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 776, in __init__
+    super().__init__(open(name, mode))  # noqa: SIM115
+                     ~~~~^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'assets/rmvpe/rmvpe.pt'
+
+[F0 extraction][Failed] logs/sexy-voice/1_16k_wavs/0_374.wav
+Traceback (most recent call last):
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 141, in go
+    featur_pit = self.compute_f0(inp_path, f0_method)
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 96, in compute_f0
+    self.model_rmvpe = RMVPE(
+                       ~~~~~^
+        "assets/rmvpe/rmvpe.pt", is_half=is_half, device=device
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 535, in __init__
+    self.model = get_default_model()
+                 ~~~~~~~~~~~~~~~~~^^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 526, in get_default_model
+    ckpt = torch.load(model_path, map_location="cpu")
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 1565, in load
+    with _open_file_like(f, "rb") as opened_file:
+         ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 795, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 776, in __init__
+    super().__init__(open(name, mode))  # noqa: SIM115
+                     ~~~~^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'assets/rmvpe/rmvpe.pt'
+
+[F0 extraction][Failed] logs/sexy-voice/1_16k_wavs/0_372.wav
+Traceback (most recent call last):
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 141, in go
+    featur_pit = self.compute_f0(inp_path, f0_method)
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 96, in compute_f0
+    self.model_rmvpe = RMVPE(
+                       ~~~~~^
+        "assets/rmvpe/rmvpe.pt", is_half=is_half, device=device
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 535, in __init__
+    self.model = get_default_model()
+                 ~~~~~~~~~~~~~~~~~^^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 526, in get_default_model
+    ckpt = torch.load(model_path, map_location="cpu")
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 1565, in load
+    with _open_file_like(f, "rb") as opened_file:
+         ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 795, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 776, in __init__
+    super().__init__(open(name, mode))  # noqa: SIM115
+                     ~~~~^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'assets/rmvpe/rmvpe.pt'
+
+Loading RMVPE model
+Loading RMVPE model
+Loading RMVPE model
+Loading RMVPE model
+[F0 extraction][Failed] logs/sexy-voice/1_16k_wavs/0_385.wav
+Traceback (most recent call last):
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 141, in go
+    featur_pit = self.compute_f0(inp_path, f0_method)
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 96, in compute_f0
+    self.model_rmvpe = RMVPE(
+                       ~~~~~^
+        "assets/rmvpe/rmvpe.pt", is_half=is_half, device=device
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 535, in __init__
+    self.model = get_default_model()
+                 ~~~~~~~~~~~~~~~~~^^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 526, in get_default_model
+    ckpt = torch.load(model_path, map_location="cpu")
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 1565, in load
+    with _open_file_like(f, "rb") as opened_file:
+         ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 795, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 776, in __init__
+    super().__init__(open(name, mode))  # noqa: SIM115
+                     ~~~~^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'assets/rmvpe/rmvpe.pt'
+
+[F0 extraction][Failed] logs/sexy-voice/1_16k_wavs/0_386.wav
+Traceback (most recent call last):
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 141, in go
+    featur_pit = self.compute_f0(inp_path, f0_method)
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 96, in compute_f0
+    self.model_rmvpe = RMVPE(
+                       ~~~~~^
+        "assets/rmvpe/rmvpe.pt", is_half=is_half, device=device
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 535, in __init__
+    self.model = get_default_model()
+                 ~~~~~~~~~~~~~~~~~^^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 526, in get_default_model
+    ckpt = torch.load(model_path, map_location="cpu")
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 1565, in load
+    with _open_file_like(f, "rb") as opened_file:
+         ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 795, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 776, in __init__
+    super().__init__(open(name, mode))  # noqa: SIM115
+                     ~~~~^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'assets/rmvpe/rmvpe.pt'
+
+[F0 extraction][Failed] logs/sexy-voice/1_16k_wavs/0_380.wav
+Traceback (most recent call last):
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 141, in go
+    featur_pit = self.compute_f0(inp_path, f0_method)
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 96, in compute_f0
+    self.model_rmvpe = RMVPE(
+                       ~~~~~^
+        "assets/rmvpe/rmvpe.pt", is_half=is_half, device=device
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 535, in __init__
+    self.model = get_default_model()
+                 ~~~~~~~~~~~~~~~~~^^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 526, in get_default_model
+    ckpt = torch.load(model_path, map_location="cpu")
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 1565, in load
+    with _open_file_like(f, "rb") as opened_file:
+         ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 795, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 776, in __init__
+    super().__init__(open(name, mode))  # noqa: SIM115
+                     ~~~~^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'assets/rmvpe/rmvpe.pt'
+
+[F0 extraction][Failed] logs/sexy-voice/1_16k_wavs/0_384.wav
+Traceback (most recent call last):
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 141, in go
+    featur_pit = self.compute_f0(inp_path, f0_method)
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 96, in compute_f0
+    self.model_rmvpe = RMVPE(
+                       ~~~~~^
+        "assets/rmvpe/rmvpe.pt", is_half=is_half, device=device
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 535, in __init__
+    self.model = get_default_model()
+                 ~~~~~~~~~~~~~~~~~^^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 526, in get_default_model
+    ckpt = torch.load(model_path, map_location="cpu")
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 1565, in load
+    with _open_file_like(f, "rb") as opened_file:
+         ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 795, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 776, in __init__
+    super().__init__(open(name, mode))  # noqa: SIM115
+                     ~~~~^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'assets/rmvpe/rmvpe.pt'
+
+Loading RMVPE model
+Loading RMVPE model
+Loading RMVPE model
+Loading RMVPE model
+[F0 extraction][Failed] logs/sexy-voice/1_16k_wavs/0_397.wav
+Traceback (most recent call last):
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 141, in go
+    featur_pit = self.compute_f0(inp_path, f0_method)
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 96, in compute_f0
+    self.model_rmvpe = RMVPE(
+                       ~~~~~^
+        "assets/rmvpe/rmvpe.pt", is_half=is_half, device=device
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 535, in __init__
+    self.model = get_default_model()
+                 ~~~~~~~~~~~~~~~~~^^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 526, in get_default_model
+    ckpt = torch.load(model_path, map_location="cpu")
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 1565, in load
+    with _open_file_like(f, "rb") as opened_file:
+         ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 795, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 776, in __init__
+    super().__init__(open(name, mode))  # noqa: SIM115
+                     ~~~~^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'assets/rmvpe/rmvpe.pt'
+
+[F0 extraction][Failed] logs/sexy-voice/1_16k_wavs/0_401.wav
+Traceback (most recent call last):
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 141, in go
+    featur_pit = self.compute_f0(inp_path, f0_method)
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 96, in compute_f0
+    self.model_rmvpe = RMVPE(
+                       ~~~~~^
+        "assets/rmvpe/rmvpe.pt", is_half=is_half, device=device
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 535, in __init__
+    self.model = get_default_model()
+                 ~~~~~~~~~~~~~~~~~^^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 526, in get_default_model
+    ckpt = torch.load(model_path, map_location="cpu")
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 1565, in load
+    with _open_file_like(f, "rb") as opened_file:
+         ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 795, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 776, in __init__
+    super().__init__(open(name, mode))  # noqa: SIM115
+                     ~~~~^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'assets/rmvpe/rmvpe.pt'
+
+[F0 extraction][Failed] logs/sexy-voice/1_16k_wavs/0_4.wav
+Traceback (most recent call last):
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 141, in go
+    featur_pit = self.compute_f0(inp_path, f0_method)
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 96, in compute_f0
+    self.model_rmvpe = RMVPE(
+                       ~~~~~^
+        "assets/rmvpe/rmvpe.pt", is_half=is_half, device=device
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 535, in __init__
+    self.model = get_default_model()
+                 ~~~~~~~~~~~~~~~~~^^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 526, in get_default_model
+    ckpt = torch.load(model_path, map_location="cpu")
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 1565, in load
+    with _open_file_like(f, "rb") as opened_file:
+         ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 795, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 776, in __init__
+    super().__init__(open(name, mode))  # noqa: SIM115
+                     ~~~~^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'assets/rmvpe/rmvpe.pt'
+
+[F0 extraction][Failed] logs/sexy-voice/1_16k_wavs/0_398.wav
+Traceback (most recent call last):
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 141, in go
+    featur_pit = self.compute_f0(inp_path, f0_method)
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 96, in compute_f0
+    self.model_rmvpe = RMVPE(
+                       ~~~~~^
+        "assets/rmvpe/rmvpe.pt", is_half=is_half, device=device
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 535, in __init__
+    self.model = get_default_model()
+                 ~~~~~~~~~~~~~~~~~^^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 526, in get_default_model
+    ckpt = torch.load(model_path, map_location="cpu")
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 1565, in load
+    with _open_file_like(f, "rb") as opened_file:
+         ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 795, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 776, in __init__
+    super().__init__(open(name, mode))  # noqa: SIM115
+                     ~~~~^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'assets/rmvpe/rmvpe.pt'
+
+Loading RMVPE model
+Loading RMVPE model
+Loading RMVPE model
+Loading RMVPE model
+[F0 extraction][Failed] logs/sexy-voice/1_16k_wavs/0_411.wav
+Traceback (most recent call last):
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 141, in go
+    featur_pit = self.compute_f0(inp_path, f0_method)
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 96, in compute_f0
+    self.model_rmvpe = RMVPE(
+                       ~~~~~^
+        "assets/rmvpe/rmvpe.pt", is_half=is_half, device=device
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 535, in __init__
+    self.model = get_default_model()
+                 ~~~~~~~~~~~~~~~~~^^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 526, in get_default_model
+    ckpt = torch.load(model_path, map_location="cpu")
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 1565, in load
+    with _open_file_like(f, "rb") as opened_file:
+         ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 795, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 776, in __init__
+    super().__init__(open(name, mode))  # noqa: SIM115
+                     ~~~~^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'assets/rmvpe/rmvpe.pt'
+
+[F0 extraction][Failed] logs/sexy-voice/1_16k_wavs/0_406.wav
+Traceback (most recent call last):
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 141, in go
+    featur_pit = self.compute_f0(inp_path, f0_method)
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 96, in compute_f0
+    self.model_rmvpe = RMVPE(
+                       ~~~~~^
+        "assets/rmvpe/rmvpe.pt", is_half=is_half, device=device
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 535, in __init__
+    self.model = get_default_model()
+                 ~~~~~~~~~~~~~~~~~^^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 526, in get_default_model
+    ckpt = torch.load(model_path, map_location="cpu")
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 1565, in load
+    with _open_file_like(f, "rb") as opened_file:
+         ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 795, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 776, in __init__
+    super().__init__(open(name, mode))  # noqa: SIM115
+                     ~~~~^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'assets/rmvpe/rmvpe.pt'
+
+[F0 extraction][Failed] logs/sexy-voice/1_16k_wavs/0_410.wav
+Traceback (most recent call last):
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 141, in go
+    featur_pit = self.compute_f0(inp_path, f0_method)
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 96, in compute_f0
+    self.model_rmvpe = RMVPE(
+                       ~~~~~^
+        "assets/rmvpe/rmvpe.pt", is_half=is_half, device=device
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 535, in __init__
+    self.model = get_default_model()
+                 ~~~~~~~~~~~~~~~~~^^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 526, in get_default_model
+    ckpt = torch.load(model_path, map_location="cpu")
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 1565, in load
+    with _open_file_like(f, "rb") as opened_file:
+         ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 795, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 776, in __init__
+    super().__init__(open(name, mode))  # noqa: SIM115
+                     ~~~~^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'assets/rmvpe/rmvpe.pt'
+
+[F0 extraction][Failed] logs/sexy-voice/1_16k_wavs/0_409.wav
+Traceback (most recent call last):
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 141, in go
+    featur_pit = self.compute_f0(inp_path, f0_method)
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 96, in compute_f0
+    self.model_rmvpe = RMVPE(
+                       ~~~~~^
+        "assets/rmvpe/rmvpe.pt", is_half=is_half, device=device
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 535, in __init__
+    self.model = get_default_model()
+                 ~~~~~~~~~~~~~~~~~^^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 526, in get_default_model
+    ckpt = torch.load(model_path, map_location="cpu")
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 1565, in load
+    with _open_file_like(f, "rb") as opened_file:
+         ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 795, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 776, in __init__
+    super().__init__(open(name, mode))  # noqa: SIM115
+                     ~~~~^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'assets/rmvpe/rmvpe.pt'
+
+Loading RMVPE model
+Loading RMVPE model
+Loading RMVPE model
+Loading RMVPE model
+[F0 extraction][Failed] logs/sexy-voice/1_16k_wavs/0_415.wav
+Traceback (most recent call last):
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 141, in go
+    featur_pit = self.compute_f0(inp_path, f0_method)
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 96, in compute_f0
+    self.model_rmvpe = RMVPE(
+                       ~~~~~^
+        "assets/rmvpe/rmvpe.pt", is_half=is_half, device=device
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 535, in __init__
+    self.model = get_default_model()
+                 ~~~~~~~~~~~~~~~~~^^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 526, in get_default_model
+    ckpt = torch.load(model_path, map_location="cpu")
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 1565, in load
+    with _open_file_like(f, "rb") as opened_file:
+         ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 795, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 776, in __init__
+    super().__init__(open(name, mode))  # noqa: SIM115
+                     ~~~~^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'assets/rmvpe/rmvpe.pt'
+
+[F0 extraction][Failed] logs/sexy-voice/1_16k_wavs/0_51.wav
+Traceback (most recent call last):
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 141, in go
+    featur_pit = self.compute_f0(inp_path, f0_method)
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 96, in compute_f0
+    self.model_rmvpe = RMVPE(
+                       ~~~~~^
+        "assets/rmvpe/rmvpe.pt", is_half=is_half, device=device
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 535, in __init__
+    self.model = get_default_model()
+                 ~~~~~~~~~~~~~~~~~^^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 526, in get_default_model
+    ckpt = torch.load(model_path, map_location="cpu")
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 1565, in load
+    with _open_file_like(f, "rb") as opened_file:
+         ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 795, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 776, in __init__
+    super().__init__(open(name, mode))  # noqa: SIM115
+                     ~~~~^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'assets/rmvpe/rmvpe.pt'
+
+[F0 extraction][Failed] logs/sexy-voice/1_16k_wavs/0_64.wav
+Traceback (most recent call last):
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 141, in go
+    featur_pit = self.compute_f0(inp_path, f0_method)
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 96, in compute_f0
+    self.model_rmvpe = RMVPE(
+                       ~~~~~^
+        "assets/rmvpe/rmvpe.pt", is_half=is_half, device=device
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 535, in __init__
+    self.model = get_default_model()
+                 ~~~~~~~~~~~~~~~~~^^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 526, in get_default_model
+    ckpt = torch.load(model_path, map_location="cpu")
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 1565, in load
+    with _open_file_like(f, "rb") as opened_file:
+         ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 795, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 776, in __init__
+    super().__init__(open(name, mode))  # noqa: SIM115
+                     ~~~~^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'assets/rmvpe/rmvpe.pt'
+
+[F0 extraction][Failed] logs/sexy-voice/1_16k_wavs/0_43.wav
+Traceback (most recent call last):
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 141, in go
+    featur_pit = self.compute_f0(inp_path, f0_method)
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 96, in compute_f0
+    self.model_rmvpe = RMVPE(
+                       ~~~~~^
+        "assets/rmvpe/rmvpe.pt", is_half=is_half, device=device
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 535, in __init__
+    self.model = get_default_model()
+                 ~~~~~~~~~~~~~~~~~^^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 526, in get_default_model
+    ckpt = torch.load(model_path, map_location="cpu")
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 1565, in load
+    with _open_file_like(f, "rb") as opened_file:
+         ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 795, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 776, in __init__
+    super().__init__(open(name, mode))  # noqa: SIM115
+                     ~~~~^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'assets/rmvpe/rmvpe.pt'
+
+Loading RMVPE model
+Loading RMVPE model
+Loading RMVPE model
+Loading RMVPE model
+[F0 extraction][Failed] logs/sexy-voice/1_16k_wavs/0_70.wav
+Traceback (most recent call last):
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 141, in go
+    featur_pit = self.compute_f0(inp_path, f0_method)
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 96, in compute_f0
+    self.model_rmvpe = RMVPE(
+                       ~~~~~^
+        "assets/rmvpe/rmvpe.pt", is_half=is_half, device=device
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 535, in __init__
+    self.model = get_default_model()
+                 ~~~~~~~~~~~~~~~~~^^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 526, in get_default_model
+    ckpt = torch.load(model_path, map_location="cpu")
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 1565, in load
+    with _open_file_like(f, "rb") as opened_file:
+         ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 795, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 776, in __init__
+    super().__init__(open(name, mode))  # noqa: SIM115
+                     ~~~~^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'assets/rmvpe/rmvpe.pt'
+
+[F0 extraction][Failed] logs/sexy-voice/1_16k_wavs/0_8.wav
+Traceback (most recent call last):
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 141, in go
+    featur_pit = self.compute_f0(inp_path, f0_method)
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 96, in compute_f0
+    self.model_rmvpe = RMVPE(
+                       ~~~~~^
+        "assets/rmvpe/rmvpe.pt", is_half=is_half, device=device
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 535, in __init__
+    self.model = get_default_model()
+                 ~~~~~~~~~~~~~~~~~^^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 526, in get_default_model
+    ckpt = torch.load(model_path, map_location="cpu")
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 1565, in load
+    with _open_file_like(f, "rb") as opened_file:
+         ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 795, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 776, in __init__
+    super().__init__(open(name, mode))  # noqa: SIM115
+                     ~~~~^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'assets/rmvpe/rmvpe.pt'
+
+[F0 extraction][Failed] logs/sexy-voice/1_16k_wavs/0_85.wav
+Traceback (most recent call last):
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 141, in go
+    featur_pit = self.compute_f0(inp_path, f0_method)
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 96, in compute_f0
+    self.model_rmvpe = RMVPE(
+                       ~~~~~^
+        "assets/rmvpe/rmvpe.pt", is_half=is_half, device=device
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 535, in __init__
+    self.model = get_default_model()
+                 ~~~~~~~~~~~~~~~~~^^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 526, in get_default_model
+    ckpt = torch.load(model_path, map_location="cpu")
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 1565, in load
+    with _open_file_like(f, "rb") as opened_file:
+         ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 795, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 776, in __init__
+    super().__init__(open(name, mode))  # noqa: SIM115
+                     ~~~~^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'assets/rmvpe/rmvpe.pt'
+
+[F0 extraction][Failed] logs/sexy-voice/1_16k_wavs/0_76.wav
+Traceback (most recent call last):
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 141, in go
+    featur_pit = self.compute_f0(inp_path, f0_method)
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 96, in compute_f0
+    self.model_rmvpe = RMVPE(
+                       ~~~~~^
+        "assets/rmvpe/rmvpe.pt", is_half=is_half, device=device
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 535, in __init__
+    self.model = get_default_model()
+                 ~~~~~~~~~~~~~~~~~^^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 526, in get_default_model
+    ckpt = torch.load(model_path, map_location="cpu")
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 1565, in load
+    with _open_file_like(f, "rb") as opened_file:
+         ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 795, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 776, in __init__
+    super().__init__(open(name, mode))  # noqa: SIM115
+                     ~~~~^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'assets/rmvpe/rmvpe.pt'
+
+Loading RMVPE model
+Loading RMVPE model
+Loading RMVPE model
+Loading RMVPE model
+[F0 extraction][Failed] logs/sexy-voice/1_16k_wavs/0_92.wav
+Traceback (most recent call last):
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 141, in go
+    featur_pit = self.compute_f0(inp_path, f0_method)
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 96, in compute_f0
+    self.model_rmvpe = RMVPE(
+                       ~~~~~^
+        "assets/rmvpe/rmvpe.pt", is_half=is_half, device=device
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 535, in __init__
+    self.model = get_default_model()
+                 ~~~~~~~~~~~~~~~~~^^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 526, in get_default_model
+    ckpt = torch.load(model_path, map_location="cpu")
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 1565, in load
+    with _open_file_like(f, "rb") as opened_file:
+         ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 795, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 776, in __init__
+    super().__init__(open(name, mode))  # noqa: SIM115
+                     ~~~~^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'assets/rmvpe/rmvpe.pt'
+
+[F0 extraction][Failed] logs/sexy-voice/1_16k_wavs/1_124.wav
+Traceback (most recent call last):
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 141, in go
+    featur_pit = self.compute_f0(inp_path, f0_method)
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 96, in compute_f0
+    self.model_rmvpe = RMVPE(
+                       ~~~~~^
+        "assets/rmvpe/rmvpe.pt", is_half=is_half, device=device
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 535, in __init__
+    self.model = get_default_model()
+                 ~~~~~~~~~~~~~~~~~^^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 526, in get_default_model
+    ckpt = torch.load(model_path, map_location="cpu")
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 1565, in load
+    with _open_file_like(f, "rb") as opened_file:
+         ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 795, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 776, in __init__
+    super().__init__(open(name, mode))  # noqa: SIM115
+                     ~~~~^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'assets/rmvpe/rmvpe.pt'
+
+[F0 extraction][Failed] logs/sexy-voice/1_16k_wavs/1_129.wav
+Traceback (most recent call last):
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 141, in go
+    featur_pit = self.compute_f0(inp_path, f0_method)
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 96, in compute_f0
+    self.model_rmvpe = RMVPE(
+                       ~~~~~^
+        "assets/rmvpe/rmvpe.pt", is_half=is_half, device=device
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 535, in __init__
+    self.model = get_default_model()
+                 ~~~~~~~~~~~~~~~~~^^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 526, in get_default_model
+    ckpt = torch.load(model_path, map_location="cpu")
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 1565, in load
+    with _open_file_like(f, "rb") as opened_file:
+         ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 795, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 776, in __init__
+    super().__init__(open(name, mode))  # noqa: SIM115
+                     ~~~~^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'assets/rmvpe/rmvpe.pt'
+
+Loading RMVPE model
+[F0 extraction][Failed] logs/sexy-voice/1_16k_wavs/1_106.wav
+Traceback (most recent call last):
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 141, in go
+    featur_pit = self.compute_f0(inp_path, f0_method)
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 96, in compute_f0
+    self.model_rmvpe = RMVPE(
+                       ~~~~~^
+        "assets/rmvpe/rmvpe.pt", is_half=is_half, device=device
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 535, in __init__
+    self.model = get_default_model()
+                 ~~~~~~~~~~~~~~~~~^^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 526, in get_default_model
+    ckpt = torch.load(model_path, map_location="cpu")
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 1565, in load
+    with _open_file_like(f, "rb") as opened_file:
+         ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 795, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 776, in __init__
+    super().__init__(open(name, mode))  # noqa: SIM115
+                     ~~~~^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'assets/rmvpe/rmvpe.pt'
+
+Loading RMVPE model
+Loading RMVPE model
+Loading RMVPE model
+[F0 extraction][Failed] logs/sexy-voice/1_16k_wavs/1_15.wav
+Traceback (most recent call last):
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 141, in go
+    featur_pit = self.compute_f0(inp_path, f0_method)
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 96, in compute_f0
+    self.model_rmvpe = RMVPE(
+                       ~~~~~^
+        "assets/rmvpe/rmvpe.pt", is_half=is_half, device=device
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 535, in __init__
+    self.model = get_default_model()
+                 ~~~~~~~~~~~~~~~~~^^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 526, in get_default_model
+    ckpt = torch.load(model_path, map_location="cpu")
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 1565, in load
+    with _open_file_like(f, "rb") as opened_file:
+         ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 795, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 776, in __init__
+    super().__init__(open(name, mode))  # noqa: SIM115
+                     ~~~~^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'assets/rmvpe/rmvpe.pt'
+
+[F0 extraction][Failed] logs/sexy-voice/1_16k_wavs/1_194.wav
+Traceback (most recent call last):
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 141, in go
+    featur_pit = self.compute_f0(inp_path, f0_method)
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 96, in compute_f0
+    self.model_rmvpe = RMVPE(
+                       ~~~~~^
+        "assets/rmvpe/rmvpe.pt", is_half=is_half, device=device
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 535, in __init__
+    self.model = get_default_model()
+                 ~~~~~~~~~~~~~~~~~^^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 526, in get_default_model
+    ckpt = torch.load(model_path, map_location="cpu")
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 1565, in load
+    with _open_file_like(f, "rb") as opened_file:
+         ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 795, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 776, in __init__
+    super().__init__(open(name, mode))  # noqa: SIM115
+                     ~~~~^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'assets/rmvpe/rmvpe.pt'
+
+[F0 extraction][Failed] logs/sexy-voice/1_16k_wavs/1_187.wav
+Traceback (most recent call last):
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 141, in go
+    featur_pit = self.compute_f0(inp_path, f0_method)
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 96, in compute_f0
+    self.model_rmvpe = RMVPE(
+                       ~~~~~^
+        "assets/rmvpe/rmvpe.pt", is_half=is_half, device=device
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 535, in __init__
+    self.model = get_default_model()
+                 ~~~~~~~~~~~~~~~~~^^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 526, in get_default_model
+    ckpt = torch.load(model_path, map_location="cpu")
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 1565, in load
+    with _open_file_like(f, "rb") as opened_file:
+         ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 795, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 776, in __init__
+    super().__init__(open(name, mode))  # noqa: SIM115
+                     ~~~~^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'assets/rmvpe/rmvpe.pt'
+
+Loading RMVPE model
+Loading RMVPE model
+Loading RMVPE model
+[F0 extraction][Failed] logs/sexy-voice/1_16k_wavs/1_154.wav
+Traceback (most recent call last):
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 141, in go
+    featur_pit = self.compute_f0(inp_path, f0_method)
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 96, in compute_f0
+    self.model_rmvpe = RMVPE(
+                       ~~~~~^
+        "assets/rmvpe/rmvpe.pt", is_half=is_half, device=device
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 535, in __init__
+    self.model = get_default_model()
+                 ~~~~~~~~~~~~~~~~~^^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 526, in get_default_model
+    ckpt = torch.load(model_path, map_location="cpu")
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 1565, in load
+    with _open_file_like(f, "rb") as opened_file:
+         ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 795, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 776, in __init__
+    super().__init__(open(name, mode))  # noqa: SIM115
+                     ~~~~^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'assets/rmvpe/rmvpe.pt'
+
+Loading RMVPE model
+[F0 extraction][Failed] logs/sexy-voice/1_16k_wavs/1_205.wav
+Traceback (most recent call last):
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 141, in go
+    featur_pit = self.compute_f0(inp_path, f0_method)
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 96, in compute_f0
+    self.model_rmvpe = RMVPE(
+                       ~~~~~^
+        "assets/rmvpe/rmvpe.pt", is_half=is_half, device=device
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 535, in __init__
+    self.model = get_default_model()
+                 ~~~~~~~~~~~~~~~~~^^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 526, in get_default_model
+    ckpt = torch.load(model_path, map_location="cpu")
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 1565, in load
+    with _open_file_like(f, "rb") as opened_file:
+         ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 795, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 776, in __init__
+    super().__init__(open(name, mode))  # noqa: SIM115
+                     ~~~~^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'assets/rmvpe/rmvpe.pt'
+
+[F0 extraction][Failed] logs/sexy-voice/1_16k_wavs/1_227.wav
+Traceback (most recent call last):
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 141, in go
+    featur_pit = self.compute_f0(inp_path, f0_method)
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 96, in compute_f0
+    self.model_rmvpe = RMVPE(
+                       ~~~~~^
+        "assets/rmvpe/rmvpe.pt", is_half=is_half, device=device
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 535, in __init__
+    self.model = get_default_model()
+                 ~~~~~~~~~~~~~~~~~^^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 526, in get_default_model
+    ckpt = torch.load(model_path, map_location="cpu")
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 1565, in load
+    with _open_file_like(f, "rb") as opened_file:
+         ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 795, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 776, in __init__
+    super().__init__(open(name, mode))  # noqa: SIM115
+                     ~~~~^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'assets/rmvpe/rmvpe.pt'
+
+[F0 extraction][Failed] logs/sexy-voice/1_16k_wavs/1_221.wav
+Traceback (most recent call last):
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 141, in go
+    featur_pit = self.compute_f0(inp_path, f0_method)
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 96, in compute_f0
+    self.model_rmvpe = RMVPE(
+                       ~~~~~^
+        "assets/rmvpe/rmvpe.pt", is_half=is_half, device=device
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 535, in __init__
+    self.model = get_default_model()
+                 ~~~~~~~~~~~~~~~~~^^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 526, in get_default_model
+    ckpt = torch.load(model_path, map_location="cpu")
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 1565, in load
+    with _open_file_like(f, "rb") as opened_file:
+         ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 795, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 776, in __init__
+    super().__init__(open(name, mode))  # noqa: SIM115
+                     ~~~~^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'assets/rmvpe/rmvpe.pt'
+
+Loading RMVPE model
+Loading RMVPE model
+Loading RMVPE model
+[F0 extraction][Failed] logs/sexy-voice/1_16k_wavs/1_218.wav
+Traceback (most recent call last):
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 141, in go
+    featur_pit = self.compute_f0(inp_path, f0_method)
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 96, in compute_f0
+    self.model_rmvpe = RMVPE(
+                       ~~~~~^
+        "assets/rmvpe/rmvpe.pt", is_half=is_half, device=device
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 535, in __init__
+    self.model = get_default_model()
+                 ~~~~~~~~~~~~~~~~~^^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 526, in get_default_model
+    ckpt = torch.load(model_path, map_location="cpu")
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 1565, in load
+    with _open_file_like(f, "rb") as opened_file:
+         ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 795, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 776, in __init__
+    super().__init__(open(name, mode))  # noqa: SIM115
+                     ~~~~^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'assets/rmvpe/rmvpe.pt'
+
+Loading RMVPE model
+[F0 extraction][Failed] logs/sexy-voice/1_16k_wavs/1_259.wav
+Traceback (most recent call last):
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 141, in go
+    featur_pit = self.compute_f0(inp_path, f0_method)
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 96, in compute_f0
+    self.model_rmvpe = RMVPE(
+                       ~~~~~^
+        "assets/rmvpe/rmvpe.pt", is_half=is_half, device=device
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 535, in __init__
+    self.model = get_default_model()
+                 ~~~~~~~~~~~~~~~~~^^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 526, in get_default_model
+    ckpt = torch.load(model_path, map_location="cpu")
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 1565, in load
+    with _open_file_like(f, "rb") as opened_file:
+         ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 795, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 776, in __init__
+    super().__init__(open(name, mode))  # noqa: SIM115
+                     ~~~~^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'assets/rmvpe/rmvpe.pt'
+
+[F0 extraction][Failed] logs/sexy-voice/1_16k_wavs/1_290.wav
+Traceback (most recent call last):
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 141, in go
+    featur_pit = self.compute_f0(inp_path, f0_method)
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 96, in compute_f0
+    self.model_rmvpe = RMVPE(
+                       ~~~~~^
+        "assets/rmvpe/rmvpe.pt", is_half=is_half, device=device
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 535, in __init__
+    self.model = get_default_model()
+                 ~~~~~~~~~~~~~~~~~^^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 526, in get_default_model
+    ckpt = torch.load(model_path, map_location="cpu")
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 1565, in load
+    with _open_file_like(f, "rb") as opened_file:
+         ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 795, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 776, in __init__
+    super().__init__(open(name, mode))  # noqa: SIM115
+                     ~~~~^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'assets/rmvpe/rmvpe.pt'
+
+[F0 extraction][Failed] logs/sexy-voice/1_16k_wavs/1_28.wav
+Traceback (most recent call last):
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 141, in go
+    featur_pit = self.compute_f0(inp_path, f0_method)
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 96, in compute_f0
+    self.model_rmvpe = RMVPE(
+                       ~~~~~^
+        "assets/rmvpe/rmvpe.pt", is_half=is_half, device=device
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 535, in __init__
+    self.model = get_default_model()
+                 ~~~~~~~~~~~~~~~~~^^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 526, in get_default_model
+    ckpt = torch.load(model_path, map_location="cpu")
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 1565, in load
+    with _open_file_like(f, "rb") as opened_file:
+         ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 795, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 776, in __init__
+    super().__init__(open(name, mode))  # noqa: SIM115
+                     ~~~~^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'assets/rmvpe/rmvpe.pt'
+
+Loading RMVPE model
+Loading RMVPE model
+Loading RMVPE model
+[F0 extraction][Failed] logs/sexy-voice/1_16k_wavs/1_267.wav
+Traceback (most recent call last):
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 141, in go
+    featur_pit = self.compute_f0(inp_path, f0_method)
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 96, in compute_f0
+    self.model_rmvpe = RMVPE(
+                       ~~~~~^
+        "assets/rmvpe/rmvpe.pt", is_half=is_half, device=device
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 535, in __init__
+    self.model = get_default_model()
+                 ~~~~~~~~~~~~~~~~~^^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 526, in get_default_model
+    ckpt = torch.load(model_path, map_location="cpu")
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 1565, in load
+    with _open_file_like(f, "rb") as opened_file:
+         ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 795, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 776, in __init__
+    super().__init__(open(name, mode))  # noqa: SIM115
+                     ~~~~^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'assets/rmvpe/rmvpe.pt'
+
+Loading RMVPE model
+[F0 extraction][Failed] logs/sexy-voice/1_16k_wavs/1_319.wav
+Traceback (most recent call last):
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 141, in go
+    featur_pit = self.compute_f0(inp_path, f0_method)
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 96, in compute_f0
+    self.model_rmvpe = RMVPE(
+                       ~~~~~^
+        "assets/rmvpe/rmvpe.pt", is_half=is_half, device=device
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 535, in __init__
+    self.model = get_default_model()
+                 ~~~~~~~~~~~~~~~~~^^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 526, in get_default_model
+    ckpt = torch.load(model_path, map_location="cpu")
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 1565, in load
+    with _open_file_like(f, "rb") as opened_file:
+         ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 795, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 776, in __init__
+    super().__init__(open(name, mode))  # noqa: SIM115
+                     ~~~~^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'assets/rmvpe/rmvpe.pt'
+
+[F0 extraction][Failed] logs/sexy-voice/1_16k_wavs/1_360.wav
+Traceback (most recent call last):
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 141, in go
+    featur_pit = self.compute_f0(inp_path, f0_method)
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 96, in compute_f0
+    self.model_rmvpe = RMVPE(
+                       ~~~~~^
+        "assets/rmvpe/rmvpe.pt", is_half=is_half, device=device
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 535, in __init__
+    self.model = get_default_model()
+                 ~~~~~~~~~~~~~~~~~^^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 526, in get_default_model
+    ckpt = torch.load(model_path, map_location="cpu")
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 1565, in load
+    with _open_file_like(f, "rb") as opened_file:
+         ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 795, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 776, in __init__
+    super().__init__(open(name, mode))  # noqa: SIM115
+                     ~~~~^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'assets/rmvpe/rmvpe.pt'
+
+[F0 extraction][Failed] logs/sexy-voice/1_16k_wavs/1_34.wav
+Traceback (most recent call last):
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 141, in go
+    featur_pit = self.compute_f0(inp_path, f0_method)
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 96, in compute_f0
+    self.model_rmvpe = RMVPE(
+                       ~~~~~^
+        "assets/rmvpe/rmvpe.pt", is_half=is_half, device=device
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 535, in __init__
+    self.model = get_default_model()
+                 ~~~~~~~~~~~~~~~~~^^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 526, in get_default_model
+    ckpt = torch.load(model_path, map_location="cpu")
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 1565, in load
+    with _open_file_like(f, "rb") as opened_file:
+         ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 795, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 776, in __init__
+    super().__init__(open(name, mode))  # noqa: SIM115
+                     ~~~~^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'assets/rmvpe/rmvpe.pt'
+
+Loading RMVPE model
+Loading RMVPE model
+Loading RMVPE model
+[F0 extraction][Failed] logs/sexy-voice/1_16k_wavs/1_324.wav
+Traceback (most recent call last):
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 141, in go
+    featur_pit = self.compute_f0(inp_path, f0_method)
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 96, in compute_f0
+    self.model_rmvpe = RMVPE(
+                       ~~~~~^
+        "assets/rmvpe/rmvpe.pt", is_half=is_half, device=device
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 535, in __init__
+    self.model = get_default_model()
+                 ~~~~~~~~~~~~~~~~~^^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 526, in get_default_model
+    ckpt = torch.load(model_path, map_location="cpu")
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 1565, in load
+    with _open_file_like(f, "rb") as opened_file:
+         ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 795, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 776, in __init__
+    super().__init__(open(name, mode))  # noqa: SIM115
+                     ~~~~^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'assets/rmvpe/rmvpe.pt'
+
+Loading RMVPE model
+[F0 extraction][Failed] logs/sexy-voice/1_16k_wavs/1_367.wav
+Traceback (most recent call last):
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 141, in go
+    featur_pit = self.compute_f0(inp_path, f0_method)
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 96, in compute_f0
+    self.model_rmvpe = RMVPE(
+                       ~~~~~^
+        "assets/rmvpe/rmvpe.pt", is_half=is_half, device=device
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 535, in __init__
+    self.model = get_default_model()
+                 ~~~~~~~~~~~~~~~~~^^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 526, in get_default_model
+    ckpt = torch.load(model_path, map_location="cpu")
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 1565, in load
+    with _open_file_like(f, "rb") as opened_file:
+         ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 795, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 776, in __init__
+    super().__init__(open(name, mode))  # noqa: SIM115
+                     ~~~~^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'assets/rmvpe/rmvpe.pt'
+
+[F0 extraction][Failed] logs/sexy-voice/1_16k_wavs/1_396.wav
+Traceback (most recent call last):
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 141, in go
+    featur_pit = self.compute_f0(inp_path, f0_method)
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 96, in compute_f0
+    self.model_rmvpe = RMVPE(
+                       ~~~~~^
+        "assets/rmvpe/rmvpe.pt", is_half=is_half, device=device
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 535, in __init__
+    self.model = get_default_model()
+                 ~~~~~~~~~~~~~~~~~^^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 526, in get_default_model
+    ckpt = torch.load(model_path, map_location="cpu")
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 1565, in load
+    with _open_file_like(f, "rb") as opened_file:
+         ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 795, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 776, in __init__
+    super().__init__(open(name, mode))  # noqa: SIM115
+                     ~~~~^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'assets/rmvpe/rmvpe.pt'
+
+[F0 extraction][Failed] logs/sexy-voice/1_16k_wavs/1_395.wav
+Traceback (most recent call last):
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 141, in go
+    featur_pit = self.compute_f0(inp_path, f0_method)
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 96, in compute_f0
+    self.model_rmvpe = RMVPE(
+                       ~~~~~^
+        "assets/rmvpe/rmvpe.pt", is_half=is_half, device=device
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 535, in __init__
+    self.model = get_default_model()
+                 ~~~~~~~~~~~~~~~~~^^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 526, in get_default_model
+    ckpt = torch.load(model_path, map_location="cpu")
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 1565, in load
+    with _open_file_like(f, "rb") as opened_file:
+         ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 795, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 776, in __init__
+    super().__init__(open(name, mode))  # noqa: SIM115
+                     ~~~~^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'assets/rmvpe/rmvpe.pt'
+
+Loading RMVPE model
+Loading RMVPE model
+Loading RMVPE model
+[F0 extraction][Failed] logs/sexy-voice/1_16k_wavs/1_379.wav
+Traceback (most recent call last):
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 141, in go
+    featur_pit = self.compute_f0(inp_path, f0_method)
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 96, in compute_f0
+    self.model_rmvpe = RMVPE(
+                       ~~~~~^
+        "assets/rmvpe/rmvpe.pt", is_half=is_half, device=device
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 535, in __init__
+    self.model = get_default_model()
+                 ~~~~~~~~~~~~~~~~~^^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 526, in get_default_model
+    ckpt = torch.load(model_path, map_location="cpu")
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 1565, in load
+    with _open_file_like(f, "rb") as opened_file:
+         ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 795, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 776, in __init__
+    super().__init__(open(name, mode))  # noqa: SIM115
+                     ~~~~^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'assets/rmvpe/rmvpe.pt'
+
+Loading RMVPE model
+[F0 extraction][Failed] logs/sexy-voice/1_16k_wavs/1_397.wav
+Traceback (most recent call last):
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 141, in go
+    featur_pit = self.compute_f0(inp_path, f0_method)
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 96, in compute_f0
+    self.model_rmvpe = RMVPE(
+                       ~~~~~^
+        "assets/rmvpe/rmvpe.pt", is_half=is_half, device=device
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 535, in __init__
+    self.model = get_default_model()
+                 ~~~~~~~~~~~~~~~~~^^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 526, in get_default_model
+    ckpt = torch.load(model_path, map_location="cpu")
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 1565, in load
+    with _open_file_like(f, "rb") as opened_file:
+         ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 795, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 776, in __init__
+    super().__init__(open(name, mode))  # noqa: SIM115
+                     ~~~~^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'assets/rmvpe/rmvpe.pt'
+
+[F0 extraction][Failed] logs/sexy-voice/1_16k_wavs/1_401.wav
+Traceback (most recent call last):
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 141, in go
+    featur_pit = self.compute_f0(inp_path, f0_method)
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 96, in compute_f0
+    self.model_rmvpe = RMVPE(
+                       ~~~~~^
+        "assets/rmvpe/rmvpe.pt", is_half=is_half, device=device
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 535, in __init__
+    self.model = get_default_model()
+                 ~~~~~~~~~~~~~~~~~^^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 526, in get_default_model
+    ckpt = torch.load(model_path, map_location="cpu")
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 1565, in load
+    with _open_file_like(f, "rb") as opened_file:
+         ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 795, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 776, in __init__
+    super().__init__(open(name, mode))  # noqa: SIM115
+                     ~~~~^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'assets/rmvpe/rmvpe.pt'
+
+[F0 extraction][Failed] logs/sexy-voice/1_16k_wavs/1_399.wav
+Traceback (most recent call last):
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 141, in go
+    featur_pit = self.compute_f0(inp_path, f0_method)
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 96, in compute_f0
+    self.model_rmvpe = RMVPE(
+                       ~~~~~^
+        "assets/rmvpe/rmvpe.pt", is_half=is_half, device=device
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 535, in __init__
+    self.model = get_default_model()
+                 ~~~~~~~~~~~~~~~~~^^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 526, in get_default_model
+    ckpt = torch.load(model_path, map_location="cpu")
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 1565, in load
+    with _open_file_like(f, "rb") as opened_file:
+         ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 795, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 776, in __init__
+    super().__init__(open(name, mode))  # noqa: SIM115
+                     ~~~~^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'assets/rmvpe/rmvpe.pt'
+
+Loading RMVPE model
+Loading RMVPE model
+Loading RMVPE model
+[F0 extraction][Failed] logs/sexy-voice/1_16k_wavs/1_398.wav
+Traceback (most recent call last):
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 141, in go
+    featur_pit = self.compute_f0(inp_path, f0_method)
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 96, in compute_f0
+    self.model_rmvpe = RMVPE(
+                       ~~~~~^
+        "assets/rmvpe/rmvpe.pt", is_half=is_half, device=device
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 535, in __init__
+    self.model = get_default_model()
+                 ~~~~~~~~~~~~~~~~~^^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 526, in get_default_model
+    ckpt = torch.load(model_path, map_location="cpu")
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 1565, in load
+    with _open_file_like(f, "rb") as opened_file:
+         ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 795, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 776, in __init__
+    super().__init__(open(name, mode))  # noqa: SIM115
+                     ~~~~^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'assets/rmvpe/rmvpe.pt'
+
+Loading RMVPE model
+[F0 extraction][Failed] logs/sexy-voice/1_16k_wavs/1_418.wav
+Traceback (most recent call last):
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 141, in go
+    featur_pit = self.compute_f0(inp_path, f0_method)
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 96, in compute_f0
+    self.model_rmvpe = RMVPE(
+                       ~~~~~^
+        "assets/rmvpe/rmvpe.pt", is_half=is_half, device=device
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 535, in __init__
+    self.model = get_default_model()
+                 ~~~~~~~~~~~~~~~~~^^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 526, in get_default_model
+    ckpt = torch.load(model_path, map_location="cpu")
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 1565, in load
+    with _open_file_like(f, "rb") as opened_file:
+         ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 795, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 776, in __init__
+    super().__init__(open(name, mode))  # noqa: SIM115
+                     ~~~~^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'assets/rmvpe/rmvpe.pt'
+
+[F0 extraction][Failed] logs/sexy-voice/1_16k_wavs/1_405.wav
+Traceback (most recent call last):
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 141, in go
+    featur_pit = self.compute_f0(inp_path, f0_method)
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 96, in compute_f0
+    self.model_rmvpe = RMVPE(
+                       ~~~~~^
+        "assets/rmvpe/rmvpe.pt", is_half=is_half, device=device
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 535, in __init__
+    self.model = get_default_model()
+                 ~~~~~~~~~~~~~~~~~^^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 526, in get_default_model
+    ckpt = torch.load(model_path, map_location="cpu")
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 1565, in load
+    with _open_file_like(f, "rb") as opened_file:
+         ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 795, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 776, in __init__
+    super().__init__(open(name, mode))  # noqa: SIM115
+                     ~~~~^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'assets/rmvpe/rmvpe.pt'
+
+[F0 extraction][Failed] logs/sexy-voice/1_16k_wavs/1_411.wav
+Traceback (most recent call last):
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 141, in go
+    featur_pit = self.compute_f0(inp_path, f0_method)
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 96, in compute_f0
+    self.model_rmvpe = RMVPE(
+                       ~~~~~^
+        "assets/rmvpe/rmvpe.pt", is_half=is_half, device=device
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 535, in __init__
+    self.model = get_default_model()
+                 ~~~~~~~~~~~~~~~~~^^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 526, in get_default_model
+    ckpt = torch.load(model_path, map_location="cpu")
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 1565, in load
+    with _open_file_like(f, "rb") as opened_file:
+         ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 795, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 776, in __init__
+    super().__init__(open(name, mode))  # noqa: SIM115
+                     ~~~~^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'assets/rmvpe/rmvpe.pt'
+
+Loading RMVPE model
+Loading RMVPE model
+Loading RMVPE model
+[F0 extraction][Failed] logs/sexy-voice/1_16k_wavs/1_41.wav
+Traceback (most recent call last):
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 141, in go
+    featur_pit = self.compute_f0(inp_path, f0_method)
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 96, in compute_f0
+    self.model_rmvpe = RMVPE(
+                       ~~~~~^
+        "assets/rmvpe/rmvpe.pt", is_half=is_half, device=device
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 535, in __init__
+    self.model = get_default_model()
+                 ~~~~~~~~~~~~~~~~~^^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 526, in get_default_model
+    ckpt = torch.load(model_path, map_location="cpu")
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 1565, in load
+    with _open_file_like(f, "rb") as opened_file:
+         ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 795, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 776, in __init__
+    super().__init__(open(name, mode))  # noqa: SIM115
+                     ~~~~^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'assets/rmvpe/rmvpe.pt'
+
+Loading RMVPE model
+[F0 extraction][Failed] logs/sexy-voice/1_16k_wavs/1_430.wav
+Traceback (most recent call last):
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 141, in go
+    featur_pit = self.compute_f0(inp_path, f0_method)
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 96, in compute_f0
+    self.model_rmvpe = RMVPE(
+                       ~~~~~^
+        "assets/rmvpe/rmvpe.pt", is_half=is_half, device=device
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 535, in __init__
+    self.model = get_default_model()
+                 ~~~~~~~~~~~~~~~~~^^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 526, in get_default_model
+    ckpt = torch.load(model_path, map_location="cpu")
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 1565, in load
+    with _open_file_like(f, "rb") as opened_file:
+         ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 795, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 776, in __init__
+    super().__init__(open(name, mode))  # noqa: SIM115
+                     ~~~~^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'assets/rmvpe/rmvpe.pt'
+
+[F0 extraction][Failed] logs/sexy-voice/1_16k_wavs/1_424.wav
+Traceback (most recent call last):
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 141, in go
+    featur_pit = self.compute_f0(inp_path, f0_method)
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 96, in compute_f0
+    self.model_rmvpe = RMVPE(
+                       ~~~~~^
+        "assets/rmvpe/rmvpe.pt", is_half=is_half, device=device
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 535, in __init__
+    self.model = get_default_model()
+                 ~~~~~~~~~~~~~~~~~^^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 526, in get_default_model
+    ckpt = torch.load(model_path, map_location="cpu")
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 1565, in load
+    with _open_file_like(f, "rb") as opened_file:
+         ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 795, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 776, in __init__
+    super().__init__(open(name, mode))  # noqa: SIM115
+                     ~~~~^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'assets/rmvpe/rmvpe.pt'
+
+[F0 extraction][Failed] logs/sexy-voice/1_16k_wavs/1_427.wav
+Traceback (most recent call last):
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 141, in go
+    featur_pit = self.compute_f0(inp_path, f0_method)
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 96, in compute_f0
+    self.model_rmvpe = RMVPE(
+                       ~~~~~^
+        "assets/rmvpe/rmvpe.pt", is_half=is_half, device=device
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 535, in __init__
+    self.model = get_default_model()
+                 ~~~~~~~~~~~~~~~~~^^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 526, in get_default_model
+    ckpt = torch.load(model_path, map_location="cpu")
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 1565, in load
+    with _open_file_like(f, "rb") as opened_file:
+         ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 795, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 776, in __init__
+    super().__init__(open(name, mode))  # noqa: SIM115
+                     ~~~~^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'assets/rmvpe/rmvpe.pt'
+
+Loading RMVPE model
+Loading RMVPE model
+Loading RMVPE model
+[F0 extraction][Failed] logs/sexy-voice/1_16k_wavs/1_425.wav
+Traceback (most recent call last):
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 141, in go
+    featur_pit = self.compute_f0(inp_path, f0_method)
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 96, in compute_f0
+    self.model_rmvpe = RMVPE(
+                       ~~~~~^
+        "assets/rmvpe/rmvpe.pt", is_half=is_half, device=device
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 535, in __init__
+    self.model = get_default_model()
+                 ~~~~~~~~~~~~~~~~~^^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 526, in get_default_model
+    ckpt = torch.load(model_path, map_location="cpu")
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 1565, in load
+    with _open_file_like(f, "rb") as opened_file:
+         ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 795, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 776, in __init__
+    super().__init__(open(name, mode))  # noqa: SIM115
+                     ~~~~^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'assets/rmvpe/rmvpe.pt'
+
+Loading RMVPE model
+[F0 extraction][Failed] logs/sexy-voice/1_16k_wavs/1_435.wav
+Traceback (most recent call last):
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 141, in go
+    featur_pit = self.compute_f0(inp_path, f0_method)
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 96, in compute_f0
+    self.model_rmvpe = RMVPE(
+                       ~~~~~^
+        "assets/rmvpe/rmvpe.pt", is_half=is_half, device=device
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 535, in __init__
+    self.model = get_default_model()
+                 ~~~~~~~~~~~~~~~~~^^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 526, in get_default_model
+    ckpt = torch.load(model_path, map_location="cpu")
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 1565, in load
+    with _open_file_like(f, "rb") as opened_file:
+         ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 795, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 776, in __init__
+    super().__init__(open(name, mode))  # noqa: SIM115
+                     ~~~~^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'assets/rmvpe/rmvpe.pt'
+
+[F0 extraction][Failed] logs/sexy-voice/1_16k_wavs/1_447.wav
+Traceback (most recent call last):
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 141, in go
+    featur_pit = self.compute_f0(inp_path, f0_method)
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 96, in compute_f0
+    self.model_rmvpe = RMVPE(
+                       ~~~~~^
+        "assets/rmvpe/rmvpe.pt", is_half=is_half, device=device
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 535, in __init__
+    self.model = get_default_model()
+                 ~~~~~~~~~~~~~~~~~^^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 526, in get_default_model
+    ckpt = torch.load(model_path, map_location="cpu")
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 1565, in load
+    with _open_file_like(f, "rb") as opened_file:
+         ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 795, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 776, in __init__
+    super().__init__(open(name, mode))  # noqa: SIM115
+                     ~~~~^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'assets/rmvpe/rmvpe.pt'
+
+[F0 extraction][Failed] logs/sexy-voice/1_16k_wavs/1_444.wav
+Traceback (most recent call last):
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 141, in go
+    featur_pit = self.compute_f0(inp_path, f0_method)
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 96, in compute_f0
+    self.model_rmvpe = RMVPE(
+                       ~~~~~^
+        "assets/rmvpe/rmvpe.pt", is_half=is_half, device=device
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 535, in __init__
+    self.model = get_default_model()
+                 ~~~~~~~~~~~~~~~~~^^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 526, in get_default_model
+    ckpt = torch.load(model_path, map_location="cpu")
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 1565, in load
+    with _open_file_like(f, "rb") as opened_file:
+         ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 795, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 776, in __init__
+    super().__init__(open(name, mode))  # noqa: SIM115
+                     ~~~~^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'assets/rmvpe/rmvpe.pt'
+
+Loading RMVPE model
+Loading RMVPE model
+Loading RMVPE model
+[F0 extraction][Failed] logs/sexy-voice/1_16k_wavs/1_437.wav
+Traceback (most recent call last):
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 141, in go
+    featur_pit = self.compute_f0(inp_path, f0_method)
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 96, in compute_f0
+    self.model_rmvpe = RMVPE(
+                       ~~~~~^
+        "assets/rmvpe/rmvpe.pt", is_half=is_half, device=device
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 535, in __init__
+    self.model = get_default_model()
+                 ~~~~~~~~~~~~~~~~~^^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 526, in get_default_model
+    ckpt = torch.load(model_path, map_location="cpu")
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 1565, in load
+    with _open_file_like(f, "rb") as opened_file:
+         ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 795, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 776, in __init__
+    super().__init__(open(name, mode))  # noqa: SIM115
+                     ~~~~^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'assets/rmvpe/rmvpe.pt'
+
+Loading RMVPE model
+[F0 extraction][Failed] logs/sexy-voice/1_16k_wavs/1_450.wav
+Traceback (most recent call last):
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 141, in go
+    featur_pit = self.compute_f0(inp_path, f0_method)
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 96, in compute_f0
+    self.model_rmvpe = RMVPE(
+                       ~~~~~^
+        "assets/rmvpe/rmvpe.pt", is_half=is_half, device=device
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 535, in __init__
+    self.model = get_default_model()
+                 ~~~~~~~~~~~~~~~~~^^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 526, in get_default_model
+    ckpt = torch.load(model_path, map_location="cpu")
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 1565, in load
+    with _open_file_like(f, "rb") as opened_file:
+         ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 795, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 776, in __init__
+    super().__init__(open(name, mode))  # noqa: SIM115
+                     ~~~~^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'assets/rmvpe/rmvpe.pt'
+
+[F0 extraction][Failed] logs/sexy-voice/1_16k_wavs/1_459.wav
+Traceback (most recent call last):
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 141, in go
+    featur_pit = self.compute_f0(inp_path, f0_method)
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 96, in compute_f0
+    self.model_rmvpe = RMVPE(
+                       ~~~~~^
+        "assets/rmvpe/rmvpe.pt", is_half=is_half, device=device
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 535, in __init__
+    self.model = get_default_model()
+                 ~~~~~~~~~~~~~~~~~^^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 526, in get_default_model
+    ckpt = torch.load(model_path, map_location="cpu")
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 1565, in load
+    with _open_file_like(f, "rb") as opened_file:
+         ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 795, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 776, in __init__
+    super().__init__(open(name, mode))  # noqa: SIM115
+                     ~~~~^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'assets/rmvpe/rmvpe.pt'
+
+[F0 extraction][Failed] logs/sexy-voice/1_16k_wavs/1_458.wav
+Traceback (most recent call last):
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 141, in go
+    featur_pit = self.compute_f0(inp_path, f0_method)
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 96, in compute_f0
+    self.model_rmvpe = RMVPE(
+                       ~~~~~^
+        "assets/rmvpe/rmvpe.pt", is_half=is_half, device=device
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 535, in __init__
+    self.model = get_default_model()
+                 ~~~~~~~~~~~~~~~~~^^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 526, in get_default_model
+    ckpt = torch.load(model_path, map_location="cpu")
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 1565, in load
+    with _open_file_like(f, "rb") as opened_file:
+         ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 795, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 776, in __init__
+    super().__init__(open(name, mode))  # noqa: SIM115
+                     ~~~~^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'assets/rmvpe/rmvpe.pt'
+
+Loading RMVPE model
+Loading RMVPE model
+Loading RMVPE model
+[F0 extraction][Failed] logs/sexy-voice/1_16k_wavs/1_457.wav
+Traceback (most recent call last):
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 141, in go
+    featur_pit = self.compute_f0(inp_path, f0_method)
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 96, in compute_f0
+    self.model_rmvpe = RMVPE(
+                       ~~~~~^
+        "assets/rmvpe/rmvpe.pt", is_half=is_half, device=device
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 535, in __init__
+    self.model = get_default_model()
+                 ~~~~~~~~~~~~~~~~~^^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 526, in get_default_model
+    ckpt = torch.load(model_path, map_location="cpu")
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 1565, in load
+    with _open_file_like(f, "rb") as opened_file:
+         ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 795, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 776, in __init__
+    super().__init__(open(name, mode))  # noqa: SIM115
+                     ~~~~^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'assets/rmvpe/rmvpe.pt'
+
+Loading RMVPE model
+[F0 extraction][Failed] logs/sexy-voice/1_16k_wavs/1_469.wav
+Traceback (most recent call last):
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 141, in go
+    featur_pit = self.compute_f0(inp_path, f0_method)
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 96, in compute_f0
+    self.model_rmvpe = RMVPE(
+                       ~~~~~^
+        "assets/rmvpe/rmvpe.pt", is_half=is_half, device=device
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 535, in __init__
+    self.model = get_default_model()
+                 ~~~~~~~~~~~~~~~~~^^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 526, in get_default_model
+    ckpt = torch.load(model_path, map_location="cpu")
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 1565, in load
+    with _open_file_like(f, "rb") as opened_file:
+         ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 795, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 776, in __init__
+    super().__init__(open(name, mode))  # noqa: SIM115
+                     ~~~~^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'assets/rmvpe/rmvpe.pt'
+
+[F0 extraction][Failed] logs/sexy-voice/1_16k_wavs/1_493.wav
+Traceback (most recent call last):
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 141, in go
+    featur_pit = self.compute_f0(inp_path, f0_method)
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 96, in compute_f0
+    self.model_rmvpe = RMVPE(
+                       ~~~~~^
+        "assets/rmvpe/rmvpe.pt", is_half=is_half, device=device
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 535, in __init__
+    self.model = get_default_model()
+                 ~~~~~~~~~~~~~~~~~^^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 526, in get_default_model
+    ckpt = torch.load(model_path, map_location="cpu")
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 1565, in load
+    with _open_file_like(f, "rb") as opened_file:
+         ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 795, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 776, in __init__
+    super().__init__(open(name, mode))  # noqa: SIM115
+                     ~~~~^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'assets/rmvpe/rmvpe.pt'
+
+[F0 extraction][Failed] logs/sexy-voice/1_16k_wavs/1_492.wav
+Traceback (most recent call last):
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 141, in go
+    featur_pit = self.compute_f0(inp_path, f0_method)
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 96, in compute_f0
+    self.model_rmvpe = RMVPE(
+                       ~~~~~^
+        "assets/rmvpe/rmvpe.pt", is_half=is_half, device=device
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 535, in __init__
+    self.model = get_default_model()
+                 ~~~~~~~~~~~~~~~~~^^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 526, in get_default_model
+    ckpt = torch.load(model_path, map_location="cpu")
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 1565, in load
+    with _open_file_like(f, "rb") as opened_file:
+         ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 795, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 776, in __init__
+    super().__init__(open(name, mode))  # noqa: SIM115
+                     ~~~~^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'assets/rmvpe/rmvpe.pt'
+
+Loading RMVPE model
+Loading RMVPE model
+Loading RMVPE model
+[F0 extraction][Failed] logs/sexy-voice/1_16k_wavs/1_485.wav
+Traceback (most recent call last):
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 141, in go
+    featur_pit = self.compute_f0(inp_path, f0_method)
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 96, in compute_f0
+    self.model_rmvpe = RMVPE(
+                       ~~~~~^
+        "assets/rmvpe/rmvpe.pt", is_half=is_half, device=device
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 535, in __init__
+    self.model = get_default_model()
+                 ~~~~~~~~~~~~~~~~~^^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 526, in get_default_model
+    ckpt = torch.load(model_path, map_location="cpu")
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 1565, in load
+    with _open_file_like(f, "rb") as opened_file:
+         ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 795, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 776, in __init__
+    super().__init__(open(name, mode))  # noqa: SIM115
+                     ~~~~^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'assets/rmvpe/rmvpe.pt'
+
+Loading RMVPE model
+[F0 extraction][Failed] logs/sexy-voice/1_16k_wavs/1_494.wav
+Traceback (most recent call last):
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 141, in go
+    featur_pit = self.compute_f0(inp_path, f0_method)
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 96, in compute_f0
+    self.model_rmvpe = RMVPE(
+                       ~~~~~^
+        "assets/rmvpe/rmvpe.pt", is_half=is_half, device=device
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 535, in __init__
+    self.model = get_default_model()
+                 ~~~~~~~~~~~~~~~~~^^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 526, in get_default_model
+    ckpt = torch.load(model_path, map_location="cpu")
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 1565, in load
+    with _open_file_like(f, "rb") as opened_file:
+         ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 795, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 776, in __init__
+    super().__init__(open(name, mode))  # noqa: SIM115
+                     ~~~~^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'assets/rmvpe/rmvpe.pt'
+
+[F0 extraction][Failed] logs/sexy-voice/1_16k_wavs/1_52.wav
+Traceback (most recent call last):
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 141, in go
+    featur_pit = self.compute_f0(inp_path, f0_method)
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 96, in compute_f0
+    self.model_rmvpe = RMVPE(
+                       ~~~~~^
+        "assets/rmvpe/rmvpe.pt", is_half=is_half, device=device
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 535, in __init__
+    self.model = get_default_model()
+                 ~~~~~~~~~~~~~~~~~^^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 526, in get_default_model
+    ckpt = torch.load(model_path, map_location="cpu")
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 1565, in load
+    with _open_file_like(f, "rb") as opened_file:
+         ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 795, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 776, in __init__
+    super().__init__(open(name, mode))  # noqa: SIM115
+                     ~~~~^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'assets/rmvpe/rmvpe.pt'
+
+[F0 extraction][Failed] logs/sexy-voice/1_16k_wavs/1_499.wav
+Traceback (most recent call last):
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 141, in go
+    featur_pit = self.compute_f0(inp_path, f0_method)
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 96, in compute_f0
+    self.model_rmvpe = RMVPE(
+                       ~~~~~^
+        "assets/rmvpe/rmvpe.pt", is_half=is_half, device=device
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 535, in __init__
+    self.model = get_default_model()
+                 ~~~~~~~~~~~~~~~~~^^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 526, in get_default_model
+    ckpt = torch.load(model_path, map_location="cpu")
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 1565, in load
+    with _open_file_like(f, "rb") as opened_file:
+         ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 795, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 776, in __init__
+    super().__init__(open(name, mode))  # noqa: SIM115
+                     ~~~~^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'assets/rmvpe/rmvpe.pt'
+
+Loading RMVPE model
+Loading RMVPE model
+Loading RMVPE model
+[F0 extraction][Failed] logs/sexy-voice/1_16k_wavs/1_495.wav
+Traceback (most recent call last):
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 141, in go
+    featur_pit = self.compute_f0(inp_path, f0_method)
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 96, in compute_f0
+    self.model_rmvpe = RMVPE(
+                       ~~~~~^
+        "assets/rmvpe/rmvpe.pt", is_half=is_half, device=device
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 535, in __init__
+    self.model = get_default_model()
+                 ~~~~~~~~~~~~~~~~~^^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 526, in get_default_model
+    ckpt = torch.load(model_path, map_location="cpu")
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 1565, in load
+    with _open_file_like(f, "rb") as opened_file:
+         ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 795, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 776, in __init__
+    super().__init__(open(name, mode))  # noqa: SIM115
+                     ~~~~^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'assets/rmvpe/rmvpe.pt'
+
+Loading RMVPE model
+[F0 extraction][Failed] logs/sexy-voice/1_16k_wavs/1_56.wav
+Traceback (most recent call last):
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 141, in go
+    featur_pit = self.compute_f0(inp_path, f0_method)
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 96, in compute_f0
+    self.model_rmvpe = RMVPE(
+                       ~~~~~^
+        "assets/rmvpe/rmvpe.pt", is_half=is_half, device=device
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 535, in __init__
+    self.model = get_default_model()
+                 ~~~~~~~~~~~~~~~~~^^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 526, in get_default_model
+    ckpt = torch.load(model_path, map_location="cpu")
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 1565, in load
+    with _open_file_like(f, "rb") as opened_file:
+         ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 795, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 776, in __init__
+    super().__init__(open(name, mode))  # noqa: SIM115
+                     ~~~~^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'assets/rmvpe/rmvpe.pt'
+
+[F0 extraction][Failed] logs/sexy-voice/1_16k_wavs/1_75.wav
+Traceback (most recent call last):
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 141, in go
+    featur_pit = self.compute_f0(inp_path, f0_method)
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 96, in compute_f0
+    self.model_rmvpe = RMVPE(
+                       ~~~~~^
+        "assets/rmvpe/rmvpe.pt", is_half=is_half, device=device
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 535, in __init__
+    self.model = get_default_model()
+                 ~~~~~~~~~~~~~~~~~^^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 526, in get_default_model
+    ckpt = torch.load(model_path, map_location="cpu")
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 1565, in load
+    with _open_file_like(f, "rb") as opened_file:
+         ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 795, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 776, in __init__
+    super().__init__(open(name, mode))  # noqa: SIM115
+                     ~~~~^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'assets/rmvpe/rmvpe.pt'
+
+[F0 extraction] Completed | Success: 0 | Skipped: 0 | Failed: 30
+[F0 extraction][Failed] logs/sexy-voice/1_16k_wavs/1_7.wav
+Traceback (most recent call last):
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 141, in go
+    featur_pit = self.compute_f0(inp_path, f0_method)
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 96, in compute_f0
+    self.model_rmvpe = RMVPE(
+                       ~~~~~^
+        "assets/rmvpe/rmvpe.pt", is_half=is_half, device=device
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 535, in __init__
+    self.model = get_default_model()
+                 ~~~~~~~~~~~~~~~~~^^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 526, in get_default_model
+    ckpt = torch.load(model_path, map_location="cpu")
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 1565, in load
+    with _open_file_like(f, "rb") as opened_file:
+         ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 795, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 776, in __init__
+    super().__init__(open(name, mode))  # noqa: SIM115
+                     ~~~~^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'assets/rmvpe/rmvpe.pt'
+
+[F0 extraction] Completed | Success: 0 | Skipped: 0 | Failed: 30
+Loading RMVPE model
+[F0 extraction][Failed] logs/sexy-voice/1_16k_wavs/1_68.wav
+Traceback (most recent call last):
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 141, in go
+    featur_pit = self.compute_f0(inp_path, f0_method)
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 96, in compute_f0
+    self.model_rmvpe = RMVPE(
+                       ~~~~~^
+        "assets/rmvpe/rmvpe.pt", is_half=is_half, device=device
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 535, in __init__
+    self.model = get_default_model()
+                 ~~~~~~~~~~~~~~~~~^^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 526, in get_default_model
+    ckpt = torch.load(model_path, map_location="cpu")
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 1565, in load
+    with _open_file_like(f, "rb") as opened_file:
+         ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 795, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 776, in __init__
+    super().__init__(open(name, mode))  # noqa: SIM115
+                     ~~~~^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'assets/rmvpe/rmvpe.pt'
+
+[F0 extraction] Completed | Success: 0 | Skipped: 0 | Failed: 30
+[F0 extraction][Failed] logs/sexy-voice/1_16k_wavs/1_85.wav
+Traceback (most recent call last):
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 141, in go
+    featur_pit = self.compute_f0(inp_path, f0_method)
+  File "/home/g3n3bu/rvc/train/dataset/extract_f0.py", line 96, in compute_f0
+    self.model_rmvpe = RMVPE(
+                       ~~~~~^
+        "assets/rmvpe/rmvpe.pt", is_half=is_half, device=device
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 535, in __init__
+    self.model = get_default_model()
+                 ~~~~~~~~~~~~~~~~~^^
+  File "/home/g3n3bu/rvc/infer/rmvpe.py", line 526, in get_default_model
+    ckpt = torch.load(model_path, map_location="cpu")
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 1565, in load
+    with _open_file_like(f, "rb") as opened_file:
+         ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 795, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/g3n3bu/rvc/venv/lib/python3.13/site-packages/torch/serialization.py", line 776, in __init__
+    super().__init__(open(name, mode))  # noqa: SIM115
+                     ~~~~^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'assets/rmvpe/rmvpe.pt'
+
+[F0 extraction] Completed | Success: 0 | Skipped: 0 | Failed: 31
+[F0 extraction] Pending: 31
+[F0 extraction] Pending: 30
+[F0 extraction] Pending: 30
+[F0 extraction] Pending: 30
+Loading RMVPE model
+Loading RMVPE model
+Loading RMVPE model
+Loading RMVPE model
+[F0 extraction] Progress: 1/30 | Success: 1 | Skipped: 0 | 0_106.wav
+[F0 extraction] Progress: 1/30 | Success: 1 | Skipped: 0 | 0_13.wav
+[F0 extraction] Progress: 1/30 | Success: 1 | Skipped: 0 | 0_110.wav
+[F0 extraction] Progress: 1/31 | Success: 1 | Skipped: 0 | 0_1.wav
+[F0 extraction] Progress: 10/30 | Success: 10 | Skipped: 0 | 0_361.wav
+[F0 extraction] Progress: 10/30 | Success: 10 | Skipped: 0 | 0_368.wav
+[F0 extraction] Progress: 10/30 | Success: 10 | Skipped: 0 | 0_358.wav
+[F0 extraction] Progress: 11/31 | Success: 11 | Skipped: 0 | 0_371.wav
+[F0 extraction] Progress: 20/30 | Success: 20 | Skipped: 0 | 1_28.wav
+[F0 extraction] Progress: 20/30 | Success: 20 | Skipped: 0 | 1_267.wav
+[F0 extraction] Progress: 20/30 | Success: 20 | Skipped: 0 | 1_290.wav
+[F0 extraction] Progress: 22/31 | Success: 22 | Skipped: 0 | 1_367.wav
+All pitch values are zero; this audio is unusable and will be skipped: logs/sexy-voice/1_16k_wavs/1_424.wav
+[F0 extraction] Progress: 30/30 | Success: 30 | Skipped: 0 | 1_7.wav
+[F0 extraction] Completed | Success: 30 | Skipped: 0 | Failed: 0
+[F0 extraction] Progress: 30/30 | Success: 30 | Skipped: 0 | 1_75.wav
+[F0 extraction] Completed | Success: 30 | Skipped: 0 | Failed: 0
+[F0 extraction] Progress: 30/30 | Success: 30 | Skipped: 0 | 1_68.wav
+[F0 extraction] Completed | Success: 30 | Skipped: 0 | Failed: 0
+[F0 extraction] Progress: 31/31 | Success: 30 | Skipped: 1 | 1_85.wav
+[F0 extraction] Completed | Success: 30 | Skipped: 1 | Failed: 0
